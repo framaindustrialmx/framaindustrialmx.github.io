@@ -3,16 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FRAMA Industrial Supply | Ferretería industrial en Tecate, B.C.</title>
+<title>FRAMA Industrial Supply | Ferretería y suministro industrial en Tecate, B.C.</title>
 
 <!-- ====== SEO ====== -->
-<meta name="description" content="FRAMA Industrial Supply, S.A. de C.V. — Proveedor industrial y ferretería industrial en Tecate, B.C. Herramientas, material eléctrico, tornillería, acero, tubería, EPP y suministros MRO. Soluciones y servicios a sus necesidades industriales.">
+<meta name="description" content="FRAMA Industrial Supply, S.A. de C.V. — Ferretería y proveedor industrial en Tecate, B.C. Herramientas, material eléctrico, tornillería, acero, tubería, EPP, herramienta neumática y MRO. Soluciones y servicios a sus necesidades industriales.">
 <meta name="keywords" content="ferretería industrial, proveedor industrial, herramientas, material eléctrico, tornillería, acero, tubería, equipo de protección personal, EPP, herramienta neumática, MRO, Tecate, Baja California, FRAMA Industrial Supply">
 <meta name="author" content="FRAMA Industrial Supply, S.A. de C.V.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://framaindustrialmx.github.io/">
-
-<!-- Open Graph / redes sociales -->
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="FRAMA Industrial Supply | Ferretería industrial en Tecate">
 <meta property="og:description" content="Herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO. Soluciones y servicios a sus necesidades industriales.">
@@ -20,15 +18,14 @@
 <meta property="og:url" content="https://framaindustrialmx.github.io/">
 <meta property="og:locale" content="es_MX">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="icon" href="assets/img/frama-logo.png">
 
-<!-- Fuente Google (Inter) -->
+<!-- Fuentes -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800;1,900&display=swap">
 
-<!-- Datos estructurados: negocio local -->
+<!-- Datos estructurados -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -56,263 +53,426 @@
 </script>
 
 <style>
- /* ====== ESTILOS ====== */
+ /* ============ TOKENS ============ */
  :root{
-   --azul:#1b4ea2;        /* azul FRAMA */
-   --azul-osc:#143b7a;
-   --azul-deep:#0e2a57;
+   --navy:#0d2a5c;        /* azul marino profundo */
+   --navy2:#143c83;
+   --navy3:#0a2049;
+   --azul:#1b6fe0;        /* azul vivo */
+   --rojo:#e2231a;        /* rojo FRAMA (CTA) */
+   --rojo-osc:#c01910;
    --amarillo:#ffd400;    /* amarillo FRAMA */
-   --amarillo-osc:#e6bf00;
-   --rojo:#e2231a;        /* rojo FRAMA */
-   --gris:#5b6470;
-   --gris-claro:#f3f5f9;
-   --borde:#e2e7ee;
-   --texto:#19222e;
-   --blanco:#ffffff;
-   --radio:12px;
-   --sombra:0 10px 28px rgba(14,42,87,.12);
+   --gris:#5d6b7e;
+   --gris-claro:#f4f6fb;
+   --borde:#e6ebf3;
+   --texto:#16202e;
+   --radio:16px;
+   --sombra:0 18px 50px rgba(13,42,92,.13);
+   --sombra-sm:0 8px 22px rgba(13,42,92,.10);
    --ancho:1200px;
  }
  *{box-sizing:border-box}
  html{scroll-behavior:smooth}
- body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-   color:var(--texto);background:var(--blanco);line-height:1.55}
+ body{margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,sans-serif;color:var(--texto);
+   background:#fff;line-height:1.6;overflow-x:hidden}
  a{color:inherit;text-decoration:none}
  img{max-width:100%;display:block}
- .contenedor{max-width:var(--ancho);margin:0 auto;padding:0 20px}
- .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:8px;
-   border:0;cursor:pointer;font-weight:700;font-size:15px;font-family:inherit;transition:.18s}
- .btn-amarillo{background:var(--amarillo);color:var(--azul-deep)}
- .btn-amarillo:hover{background:var(--amarillo-osc);transform:translateY(-1px)}
- .btn-azul{background:var(--azul);color:#fff}
- .btn-azul:hover{background:var(--azul-osc);transform:translateY(-1px)}
- .btn-rojo{background:var(--rojo);color:#fff}
- .btn-rojo:hover{filter:brightness(1.08)}
- .btn-borde{background:#fff;color:var(--azul);border:2px solid var(--azul)}
- .btn-borde:hover{background:var(--azul);color:#fff}
+ h1,h2,h3,.font-d{font-family:'Poppins',sans-serif}
+ .contenedor{max-width:var(--ancho);margin:0 auto;padding:0 22px}
+ .seccion{padding:96px 0}
+
+ /* botones */
+ .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:10px;border:0;
+   cursor:pointer;font-weight:700;font-size:15px;font-family:'Poppins',sans-serif;transition:.2s;white-space:nowrap}
+ .btn-rojo{background:var(--rojo);color:#fff;box-shadow:0 10px 24px rgba(226,35,26,.32)}
+ .btn-rojo:hover{background:var(--rojo-osc);transform:translateY(-2px)}
+ .btn-amarillo{background:var(--amarillo);color:var(--navy)}
+ .btn-amarillo:hover{filter:brightness(1.05);transform:translateY(-2px)}
+ .btn-navy{background:var(--navy);color:#fff}
+ .btn-navy:hover{background:var(--navy2);transform:translateY(-2px)}
+ .btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.5);backdrop-filter:blur(4px)}
+ .btn-ghost:hover{background:#fff;color:var(--navy);border-color:#fff}
  .btn-wa{background:#25d366;color:#fff}
- .btn-wa:hover{filter:brightness(1.06)}
- .seccion{padding:70px 0}
- .seccion h2{font-size:32px;margin:0 0 6px;font-weight:800;letter-spacing:-.5px;color:var(--azul-deep)}
- .seccion h2 .marca-acento{color:var(--rojo)}
- .seccion .subtitulo{color:var(--gris);margin:0 0 36px;font-size:17px;max-width:720px}
- .barra-titulo{display:inline-block;height:4px;width:64px;background:var(--amarillo);border-radius:4px;margin-bottom:18px}
+ .btn-wa:hover{filter:brightness(1.06);transform:translateY(-2px)}
+ .btn-borde{background:#fff;color:var(--navy);border:1.5px solid var(--borde)}
+ .btn-borde:hover{border-color:var(--azul);color:var(--azul)}
 
- /* TOPBAR */
- .topbar{background:var(--azul-deep);color:#dfe7f5;font-size:13.5px}
- .topbar-inner{display:flex;justify-content:space-between;align-items:center;height:40px;gap:18px;flex-wrap:wrap}
- .topbar a{display:inline-flex;align-items:center;gap:6px}
+ /* encabezados de sección */
+ .overline{display:inline-block;font-family:'Poppins';font-weight:700;font-size:12.5px;letter-spacing:3px;
+   text-transform:uppercase;color:var(--rojo);margin-bottom:12px}
+ .titulo{font-size:40px;font-weight:800;line-height:1.1;letter-spacing:-1px;color:var(--navy);margin:0}
+ .titulo .ac{color:var(--azul)}
+ .centro{text-align:center}
+ .centro .subt{max-width:680px;margin-left:auto;margin-right:auto}
+ .subt{color:var(--gris);font-size:17.5px;margin:14px 0 0}
+ .head-mb{margin-bottom:54px}
+
+ /* placeholder de imagen (fallback de marca) */
+ .ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--navy) 0%,var(--azul) 100%)}
+ .ph::before{content:"";position:absolute;inset:0;background:
+   radial-gradient(circle at 80% 15%,rgba(255,212,0,.28),transparent 45%),
+   radial-gradient(circle at 15% 90%,rgba(226,35,26,.30),transparent 45%)}
+ .ph img{position:relative;width:100%;height:100%;object-fit:cover;z-index:1}
+ .ph img.fail{display:none}
+
+ /* reveal on scroll */
+ .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+ .reveal.in{opacity:1;transform:none}
+
+ /* ============ TOPBAR ============ */
+ .topbar{background:var(--navy3);color:#cdd8ee;font-size:13.5px}
+ .topbar-inner{display:flex;justify-content:space-between;align-items:center;min-height:42px;gap:18px;flex-wrap:wrap;padding:6px 0}
+ .topbar a,.topbar span{display:inline-flex;align-items:center;gap:7px}
+ .topbar .izq{display:flex;gap:22px;flex-wrap:wrap}
  .topbar a:hover{color:#fff}
- .topbar .izq{display:flex;gap:20px;flex-wrap:wrap}
 
- /* NAV */
- header.nav{position:sticky;top:0;z-index:60;background:#fff;border-bottom:3px solid var(--amarillo);
-   box-shadow:0 2px 12px rgba(14,42,87,.06)}
- .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:84px}
- .logo img{height:60px;width:auto}
- .menu{display:flex;gap:26px;align-items:center}
- .menu a{font-weight:700;color:var(--azul-deep);font-size:15px}
+ /* ============ NAV ============ */
+ header.nav{position:sticky;top:0;z-index:70;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);
+   border-bottom:1px solid var(--borde);transition:box-shadow .2s}
+ header.nav.scrolled{box-shadow:0 6px 26px rgba(13,42,92,.10)}
+ .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;height:84px}
+ .menu{display:flex;gap:30px;align-items:center}
+ .menu a{font-family:'Poppins';font-weight:600;color:var(--navy);font-size:15px;position:relative}
+ .menu a::after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:3px;background:var(--rojo);
+   border-radius:3px;transition:width .25s}
+ .menu a:hover::after{width:100%}
  .menu a:hover{color:var(--rojo)}
- .nav-cta{display:flex;gap:10px;align-items:center}
- .hamb{display:none;background:none;border:0;font-size:28px;cursor:pointer;color:var(--azul)}
+ .nav-cta{display:flex;gap:12px;align-items:center}
+ .hamb{display:none;background:none;border:0;font-size:30px;cursor:pointer;color:var(--navy);line-height:1}
 
- /* HERO */
- .hero{background:linear-gradient(120deg,var(--azul-deep) 0%,var(--azul) 60%,var(--azul-osc) 100%);
-   color:#fff;padding:84px 0;position:relative;overflow:hidden}
- .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;
-   background:radial-gradient(circle,rgba(255,212,0,.22),transparent 70%);border-radius:50%}
- .hero .eslogan{display:inline-block;background:var(--amarillo);color:var(--azul-deep);
-   font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 14px;border-radius:999px;margin-bottom:18px}
- .hero h1{font-size:46px;line-height:1.08;margin:0 0 16px;font-weight:900;letter-spacing:-1px;max-width:880px}
+ /* LOGO orgánico (SVG + texto) */
+ .brand{display:flex;align-items:center;gap:13px}
+ .brand-ico{width:46px;height:46px;flex:none}
+ .brand-tx{display:flex;align-items:center;gap:11px;line-height:1}
+ .brand-name{font-family:'Poppins';font-weight:900;font-style:italic;font-size:30px;letter-spacing:-1px;color:var(--navy)}
+ .brand-name span{color:var(--rojo)}
+ .brand-sub{display:flex;flex-direction:column;border-left:3px solid var(--rojo);padding-left:11px;
+   font-family:'Poppins';font-weight:700;font-size:11px;letter-spacing:2.5px;color:var(--navy);text-transform:uppercase}
+ .brand-sub small{font-weight:600;font-size:9px;letter-spacing:1.5px;color:var(--gris)}
+ .nav .brand-name{font-size:26px}
+
+ /* ============ HERO ============ */
+ .hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+ .hero .bg{position:absolute;inset:0;z-index:0}
+ .hero .bg::after{content:"";position:absolute;inset:0;
+   background:linear-gradient(110deg,rgba(10,32,73,.96) 0%,rgba(13,42,92,.86) 45%,rgba(13,42,92,.55) 100%)}
+ .hero .bg img{width:100%;height:100%;object-fit:cover}
+ .hero-inner{position:relative;z-index:2;padding:90px 0}
+ .hero .pill{display:inline-flex;align-items:center;gap:9px;background:rgba(255,212,0,.16);
+   border:1px solid rgba(255,212,0,.5);color:var(--amarillo);font-family:'Poppins';font-weight:700;
+   font-size:12.5px;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:22px}
+ .hero h1{font-size:60px;line-height:1.04;letter-spacing:-1.5px;font-weight:900;margin:0 0 18px;max-width:900px}
  .hero h1 b{color:var(--amarillo)}
- .hero p{font-size:19px;max-width:660px;opacity:.95;margin:0 0 30px}
+ .hero p{font-size:20px;max-width:600px;opacity:.94;margin:0 0 32px}
  .hero .acciones{display:flex;gap:14px;flex-wrap:wrap}
- .hero .stats{display:flex;gap:46px;margin-top:52px;flex-wrap:wrap}
- .hero .stats b{display:block;font-size:30px;font-weight:900;color:var(--amarillo)}
- .hero .stats span{opacity:.9;font-size:14px}
+ .hero .mini{margin-top:46px;display:flex;gap:14px;flex-wrap:wrap;font-size:14px;opacity:.9}
+ .hero .mini span{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);
+   border:1px solid rgba(255,255,255,.16);padding:8px 14px;border-radius:999px}
 
- /* CATEGORIAS */
- #categorias{background:var(--gris-claro)}
- .grid-cat{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
- .cat-card{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:22px 14px;
-   text-align:center;cursor:pointer;transition:.18s;display:flex;flex-direction:column;gap:8px;align-items:center}
- .cat-card:hover{transform:translateY(-4px);box-shadow:var(--sombra);border-color:var(--amarillo)}
- .cat-card .ico{width:56px;height:56px;border-radius:50%;background:#eef3fb;display:grid;place-items:center;font-size:26px}
- .cat-card span{font-weight:700;font-size:14px;color:var(--azul-deep)}
+ /* barra de stats sobre el hero */
+ .statbar{position:relative;z-index:3;margin-top:-48px}
+ .statbar-grid{background:#fff;border-radius:18px;box-shadow:var(--sombra);display:grid;
+   grid-template-columns:repeat(4,1fr);overflow:hidden}
+ .statbar-grid .it{padding:26px 22px;text-align:center;border-right:1px solid var(--borde)}
+ .statbar-grid .it:last-child{border-right:0}
+ .statbar-grid b{display:block;font-family:'Poppins';font-weight:900;font-size:34px;color:var(--navy);line-height:1}
+ .statbar-grid span{font-size:13.5px;color:var(--gris);margin-top:6px;display:block}
 
- /* SERVICIOS / POR QUE */
- .grid-serv{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
- .card-serv{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:24px;transition:.18s}
- .card-serv:hover{box-shadow:var(--sombra);transform:translateY(-3px)}
- .card-serv .ico{font-size:30px;margin-bottom:10px}
- .card-serv h3{margin:0 0 6px;font-size:17px;color:var(--azul-deep)}
+ /* ============ CATEGORIAS ============ */
+ #categorias{background:#fff}
+ .grid-cat{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+ .cat-card{position:relative;border-radius:var(--radio);overflow:hidden;cursor:pointer;height:180px;
+   box-shadow:var(--sombra-sm);transition:.25s}
+ .cat-card:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+ .cat-card .ph{position:absolute;inset:0}
+ .cat-card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,42,92,.15),rgba(13,42,92,.85))}
+ .cat-card .cont{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:18px;color:#fff;display:flex;align-items:center;gap:10px}
+ .cat-card .cont .ico{font-size:24px}
+ .cat-card .cont span{font-family:'Poppins';font-weight:700;font-size:16px}
+ .cat-card .flecha{position:absolute;top:14px;right:14px;z-index:2;width:34px;height:34px;border-radius:50%;
+   background:var(--rojo);color:#fff;display:grid;place-items:center;opacity:0;transform:translateY(-6px);transition:.25s}
+ .cat-card:hover .flecha{opacity:1;transform:none}
+
+ /* ============ DESTACADOS ============ */
+ #destacados{background:var(--gris-claro)}
+ .grid-dest{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+ .dest-card{background:#fff;border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra-sm);
+   transition:.25s;display:flex;flex-direction:column}
+ .dest-card:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+ .dest-card .foto{position:relative;height:210px}
+ .dest-card .foto .ph{position:absolute;inset:0}
+ .dest-card .badge{position:absolute;top:14px;left:14px;z-index:3;background:var(--rojo);color:#fff;
+   font-family:'Poppins';font-weight:700;font-size:11px;letter-spacing:1px;padding:6px 12px;border-radius:8px;text-transform:uppercase}
+ .dest-card .body{padding:22px;display:flex;flex-direction:column;gap:8px;flex:1}
+ .dest-card .et{font-family:'Poppins';font-size:12px;font-weight:700;color:var(--azul);text-transform:uppercase;letter-spacing:1px}
+ .dest-card h3{margin:0;font-size:20px;color:var(--navy)}
+ .dest-card p{margin:0;color:var(--gris);font-size:14.5px;flex:1}
+ .dest-card .btn{margin-top:6px;align-self:flex-start}
+
+ /* ============ BANDA STATS ============ */
+ .bigstats{position:relative;color:#fff;overflow:hidden}
+ .bigstats .bg{position:absolute;inset:0;z-index:0}
+ .bigstats .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,32,73,.97),rgba(20,60,131,.92))}
+ .bigstats .bg img{width:100%;height:100%;object-fit:cover}
+ .bigstats .inner{position:relative;z-index:2;padding:84px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+ .bigstats b{display:block;font-family:'Poppins';font-weight:900;font-size:52px;line-height:1;color:#fff}
+ .bigstats b .y{color:var(--amarillo)}
+ .bigstats span{display:block;margin-top:10px;font-size:15px;opacity:.85}
+
+ /* ============ CATALOGO ============ */
+ #catalogo{background:#fff}
+ .cat-controles{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+ .buscador{flex:1;min-width:240px;display:flex;align-items:center;gap:10px;background:var(--gris-claro);
+   border:1px solid var(--borde);border-radius:12px;padding:13px 18px}
+ .buscador input{border:0;outline:0;flex:1;font-size:15px;font-family:inherit;background:transparent}
+ .filtros{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:28px}
+ .chip{padding:9px 18px;border-radius:999px;border:1px solid var(--borde);background:#fff;cursor:pointer;
+   font-family:'Poppins';font-weight:600;font-size:13.5px;color:var(--gris);transition:.18s}
+ .chip:hover{border-color:var(--azul);color:var(--azul)}
+ .chip.activo{background:var(--navy);border-color:var(--navy);color:#fff}
+ .grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+ .card-prod{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);overflow:hidden;
+   display:flex;flex-direction:column;transition:.22s}
+ .card-prod:hover{box-shadow:var(--sombra);transform:translateY(-4px);border-color:transparent}
+ .card-prod .foto{position:relative;height:150px}
+ .card-prod .foto .ph{position:absolute;inset:0}
+ .card-prod .body{padding:16px;display:flex;flex-direction:column;gap:7px;flex:1}
+ .card-prod .et{align-self:flex-start;background:#fff3cd;color:#7a5d00;font-family:'Poppins';font-size:11px;
+   font-weight:700;padding:3px 10px;border-radius:6px}
+ .card-prod h3{margin:2px 0 0;font-size:15.5px;color:var(--navy);font-family:'Poppins';font-weight:600}
+ .card-prod .sku{font-size:12px;color:var(--gris)}
+ .card-prod p{margin:0;color:var(--gris);font-size:13.5px;flex:1}
+ .card-prod .pie{display:flex;gap:8px;margin-top:6px}
+ .card-prod .pie .btn{padding:9px 14px;font-size:13px;flex:1;justify-content:center}
+ .vacio{padding:50px;text-align:center;color:var(--gris);grid-column:1/-1}
+ .cat-acciones{margin-top:34px;display:flex;justify-content:center}
+
+ /* ============ POR QUE ============ */
+ #porque{background:var(--gris-claro)}
+ .grid-serv{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+ .card-serv{background:#fff;border-radius:var(--radio);padding:30px 24px;box-shadow:var(--sombra-sm);transition:.22s;text-align:center}
+ .card-serv:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+ .card-serv .ico{width:64px;height:64px;margin:0 auto 16px;border-radius:16px;display:grid;place-items:center;
+   font-size:28px;background:linear-gradient(135deg,var(--navy),var(--azul));color:#fff}
+ .card-serv h3{margin:0 0 8px;font-size:18px;color:var(--navy)}
  .card-serv p{margin:0;color:var(--gris);font-size:14.5px}
 
- /* CATALOGO */
- #catalogo{background:var(--gris-claro)}
- .cat-controles{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
- .buscador{flex:1;min-width:220px;display:flex;align-items:center;gap:8px;background:#fff;
-   border:1px solid var(--borde);border-radius:8px;padding:11px 16px}
- .buscador input{border:0;outline:0;flex:1;font-size:15px;font-family:inherit;background:transparent}
- .filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
- .chip{padding:8px 16px;border-radius:999px;border:1px solid var(--borde);background:#fff;cursor:pointer;
-   font-weight:600;font-size:14px;font-family:inherit;color:var(--gris);transition:.15s}
- .chip:hover{border-color:var(--azul);color:var(--azul)}
- .chip.activo{background:var(--azul);border-color:var(--azul);color:#fff}
- .grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
- .card-prod{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:18px;
-   display:flex;flex-direction:column;gap:8px;transition:.18s}
- .card-prod:hover{box-shadow:var(--sombra)}
- .card-prod .etiqueta{align-self:flex-start;background:#fff7cc;color:#8a6d00;font-size:12px;
-   font-weight:700;padding:3px 10px;border-radius:999px}
- .card-prod h3{margin:4px 0 0;font-size:16px;color:var(--azul-deep)}
- .card-prod .sku{font-size:12px;color:var(--gris)}
- .card-prod p{margin:0;color:var(--gris);font-size:14px;flex:1}
- .card-prod .pie{display:flex;gap:8px;margin-top:6px}
- .card-prod .pie .btn{padding:9px 13px;font-size:13px}
- .vacio{padding:40px;text-align:center;color:var(--gris);grid-column:1/-1}
- .cat-acciones{margin-top:28px;display:flex;justify-content:center}
+ /* ============ SOBRE ============ */
+ #sobre .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+ #sobre .foto{border-radius:20px;overflow:hidden;height:440px;box-shadow:var(--sombra)}
+ #sobre .foto .ph{position:absolute;inset:0}
+ #sobre .foto-wrap{position:relative;height:440px}
+ #sobre .foto-wrap .tag{position:absolute;bottom:-22px;right:-10px;z-index:3;background:var(--rojo);color:#fff;
+   border-radius:16px;padding:20px 26px;box-shadow:var(--sombra);font-family:'Poppins'}
+ #sobre .foto-wrap .tag b{display:block;font-size:30px;font-weight:900;line-height:1}
+ #sobre .foto-wrap .tag span{font-size:13px;opacity:.9}
+ #sobre ul{padding:0;margin:20px 0 26px;list-style:none;display:grid;gap:12px}
+ #sobre li{display:flex;gap:11px;align-items:flex-start;font-size:16px}
+ #sobre li::before{content:"✓";color:#fff;background:var(--rojo);width:22px;height:22px;border-radius:50%;
+   display:grid;place-items:center;font-size:13px;font-weight:800;flex:none;margin-top:2px}
 
- /* MARCAS */
- #marcas{text-align:center}
+ /* ============ MARCAS ============ */
+ #marcas{background:#fff;text-align:center}
  .tira-marcas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:10px}
- .marca-chip{background:var(--gris-claro);border:1px solid var(--borde);border-radius:999px;
-   padding:12px 22px;font-weight:800;color:var(--azul-deep);font-size:15px}
+ .marca-chip{background:var(--gris-claro);border:1px solid var(--borde);border-radius:12px;
+   padding:16px 28px;font-family:'Poppins';font-weight:800;color:var(--navy);font-size:17px;transition:.2s}
+ .marca-chip:hover{color:var(--rojo);transform:translateY(-3px);box-shadow:var(--sombra-sm)}
 
- /* NOSOTROS */
- #nosotros .grid-nos{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
- #nosotros ul{padding:0;margin:18px 0 0;list-style:none;display:grid;gap:12px}
- #nosotros li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
- #nosotros li::before{content:"✓";color:var(--rojo);font-weight:900}
- .panel-nos{background:var(--azul-deep);color:#fff;border-radius:var(--radio);padding:30px;
-   display:grid;grid-template-columns:1fr 1fr;gap:22px}
- .panel-nos b{display:block;font-size:28px;color:var(--amarillo);font-weight:900}
- .panel-nos span{opacity:.85;font-size:14px}
+ /* ============ CONTACTO ============ */
+ #contacto{position:relative;color:#fff;overflow:hidden}
+ #contacto .bg{position:absolute;inset:0;z-index:0;background:linear-gradient(120deg,var(--navy3),var(--navy2))}
+ #contacto .inner{position:relative;z-index:2}
+ #contacto .titulo,#contacto .overline{color:#fff}
+ #contacto .overline{color:var(--amarillo)}
+ .grid-cont{display:grid;grid-template-columns:1fr 1fr;gap:46px;margin-top:40px;align-items:start}
+ .cont-info{display:grid;gap:16px}
+ .cont-info .row{display:flex;gap:14px;align-items:flex-start;font-size:16px;color:#dde7f7}
+ .cont-info .ico{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:20px;flex:none}
+ .cont-info .row b{display:block;color:#fff;font-family:'Poppins';margin-bottom:2px}
+ .cont-info .btn{margin-top:8px;align-self:flex-start}
+ form.cotiza{background:#fff;border-radius:20px;padding:30px;display:grid;gap:15px;box-shadow:var(--sombra)}
+ form.cotiza label{font-size:13px;font-weight:700;color:var(--texto);display:grid;gap:6px;font-family:'Poppins'}
+ form.cotiza input,form.cotiza textarea{padding:13px 15px;border:1px solid var(--borde);border-radius:10px;
+   font-size:15px;font-family:'Inter';color:var(--texto);background:var(--gris-claro)}
+ form.cotiza input:focus,form.cotiza textarea:focus{outline:none;border-color:var(--azul);background:#fff}
+ form.cotiza textarea{resize:vertical;min-height:100px}
 
- /* CONTACTO */
- #contacto{background:linear-gradient(120deg,var(--azul-deep),var(--azul))}
- #contacto h2,#contacto .subtitulo{color:#fff}
- #contacto .subtitulo{opacity:.9}
- .grid-cont{display:grid;grid-template-columns:1fr 1fr;gap:40px}
- .cont-info{display:grid;gap:16px;color:#eaf1fb}
- .cont-info a,.cont-info div{display:flex;gap:12px;align-items:flex-start;font-size:16px}
- .cont-info .ico{font-size:22px}
- .cont-info .btn{margin-top:4px;align-self:flex-start}
- form.cotiza{background:#fff;border-radius:var(--radio);padding:26px;display:grid;gap:14px}
- form.cotiza label{font-size:13px;font-weight:700;color:var(--texto);display:grid;gap:6px}
- form.cotiza input,form.cotiza textarea{padding:11px 14px;border:1px solid var(--borde);
-   border-radius:8px;font-size:15px;font-family:inherit;color:var(--texto)}
- form.cotiza textarea{resize:vertical;min-height:90px}
-
- /* FOOTER */
- footer.pie{background:#0a1c3a;color:#9fb0cb;padding:40px 0;font-size:14px}
- .pie-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:24px}
- .pie-grid h4{color:#fff;margin:0 0 12px;font-size:15px}
- .pie-grid a{display:block;padding:3px 0}
+ /* ============ FOOTER ============ */
+ footer.pie{background:var(--navy3);color:#9fb0cf;padding:64px 0 26px;font-size:14.5px}
+ .pie-grid{display:grid;grid-template-columns:1.5fr 1fr 1.3fr;gap:40px;margin-bottom:36px}
+ .pie .brand-name{color:#fff;font-size:26px}
+ .pie .brand-sub{color:#fff;border-left-color:var(--amarillo)}
+ .pie p{margin:16px 0 0;max-width:320px;line-height:1.7}
+ .pie h4{color:#fff;margin:0 0 16px;font-size:15px;font-family:'Poppins'}
+ .pie-grid a{display:block;padding:4px 0}
  .pie-grid a:hover{color:#fff}
- .pie-logo{background:#fff;border-radius:8px;padding:8px 10px;display:inline-block;margin-bottom:12px}
- .pie-logo img{height:46px}
- .pie-copy{border-top:1px solid #1c3158;padding-top:18px;text-align:center;opacity:.8}
+ .pie .crow{display:flex;gap:10px;align-items:flex-start;padding:4px 0}
+ .pie-copy{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;text-align:center;opacity:.8;font-size:13.5px}
 
- /* WhatsApp flotante */
- .wa-float{position:fixed;right:20px;bottom:20px;z-index:80;background:#25d366;color:#fff;
-   width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:28px;
-   box-shadow:0 8px 20px rgba(0,0,0,.25);transition:.18s}
- .wa-float:hover{transform:scale(1.07)}
+ /* flotantes */
+ .wa-float{position:fixed;right:22px;bottom:22px;z-index:90;background:#25d366;color:#fff;width:60px;height:60px;
+   border-radius:50%;display:grid;place-items:center;font-size:30px;box-shadow:0 10px 26px rgba(0,0,0,.28);transition:.2s}
+ .wa-float:hover{transform:scale(1.08)}
+ .top-btn{position:fixed;right:24px;bottom:94px;z-index:90;background:var(--navy);color:#fff;width:46px;height:46px;
+   border-radius:12px;display:grid;place-items:center;font-size:20px;border:0;cursor:pointer;opacity:0;
+   pointer-events:none;transition:.25s;box-shadow:var(--sombra-sm)}
+ .top-btn.show{opacity:1;pointer-events:auto}
+ .top-btn:hover{background:var(--rojo)}
 
- /* RESPONSIVE */
+ /* ============ RESPONSIVE ============ */
  @media(max-width:1024px){
-   .grid-cat{grid-template-columns:repeat(3,1fr)}
+   .grid-cat{grid-template-columns:repeat(2,1fr)}
+   .grid-dest{grid-template-columns:repeat(2,1fr)}
    .grid-serv{grid-template-columns:repeat(2,1fr)}
    .grid-prod{grid-template-columns:repeat(3,1fr)}
+   .statbar-grid{grid-template-columns:repeat(2,1fr)}
+   .statbar-grid .it:nth-child(2){border-right:0}
+   .bigstats .inner{grid-template-columns:repeat(2,1fr);gap:40px 20px}
+   .hero h1{font-size:46px}
  }
- @media(max-width:820px){
+ @media(max-width:760px){
    .menu{display:none}
    .hamb{display:block}
-   .hero h1{font-size:34px}
+   .menu.open{display:flex;position:absolute;top:84px;left:0;right:0;flex-direction:column;background:#fff;
+     padding:18px 22px;gap:16px;box-shadow:var(--sombra);border-bottom:1px solid var(--borde)}
+   .seccion{padding:64px 0}
+   .titulo{font-size:30px}
+   .hero{min-height:auto}
+   .hero h1{font-size:36px}
+   .hero p{font-size:17px}
    .grid-prod{grid-template-columns:repeat(2,1fr)}
-   #nosotros .grid-nos,.grid-cont,.pie-grid{grid-template-columns:1fr}
-   .seccion{padding:52px 0}
+   #sobre .grid,.grid-cont,.pie-grid{grid-template-columns:1fr}
+   #sobre .foto-wrap{height:300px}#sobre .foto{height:300px}
+   .brand-sub{display:none}
  }
- @media(max-width:520px){
-   .grid-cat{grid-template-columns:repeat(2,1fr)}
-   .grid-serv,.grid-prod{grid-template-columns:1fr}
-   .panel-nos{grid-template-columns:1fr}
-   .topbar .izq{gap:12px}
+ @media(max-width:480px){
+   .grid-cat,.grid-dest,.grid-serv,.grid-prod{grid-template-columns:1fr}
+   .statbar-grid{grid-template-columns:1fr 1fr}
+   .bigstats b{font-size:40px}
+   .hero h1{font-size:30px}
  }
 </style>
 </head>
 <body>
-<!-- ====== CONTENIDO DEL SITIO ====== -->
+
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="contenedor topbar-inner">
     <div class="izq">
       <a href="tel:+526656545282">📞 (665) 654-5282</a>
-      <a href="https://wa.me/526656545282" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <span>🕗 Lun–Vie 8:00–17:00</span>
     </div>
-    <div class="der">🕗 Lun–Vie 8:00–17:00 · Tecate, B.C.</div>
+    <div class="der">📍 Puebla 91-2, Col. Emiliano Zapata, Tecate, B.C.</div>
   </div>
 </div>
 
 <!-- NAV -->
-<header class="nav">
+<header class="nav" id="nav">
   <div class="contenedor nav-inner">
-    <a href="#inicio" class="logo" aria-label="FRAMA Industrial Supply"><img src="assets/img/frama-logo.png" alt="FRAMA Industrial Supply, S.A. de C.V."></a>
-    <nav class="menu">
+    <a href="#inicio" class="brand" aria-label="FRAMA Industrial Supply">
+      <svg class="brand-ico" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#0d2a5c"/>
+        <circle cx="32" cy="32" r="30" fill="none" stroke="#1b6fe0" stroke-width="2"/>
+        <g fill="none" stroke="#ffffff" stroke-width="1.6" opacity=".85">
+          <ellipse cx="32" cy="32" rx="13" ry="30" transform="translate(0,0)"/>
+          <ellipse cx="32" cy="32" rx="30" ry="13"/>
+          <line x1="2" y1="32" x2="62" y2="32"/>
+        </g>
+        <g transform="translate(42,42)">
+          <circle r="11" fill="#ffd400"/>
+          <g fill="#0d2a5c">
+            <circle r="4.4"/>
+          </g>
+          <g fill="#ffd400" stroke="#ffd400">
+            <rect x="-1.6" y="-14" width="3.2" height="5"/>
+            <rect x="-1.6" y="9" width="3.2" height="5"/>
+            <rect x="-14" y="-1.6" width="5" height="3.2"/>
+            <rect x="9" y="-1.6" width="5" height="3.2"/>
+          </g>
+        </g>
+      </svg>
+      <span class="brand-tx">
+        <span class="brand-name">FRA<span>MA</span></span>
+        <span class="brand-sub">Industrial<br>Supply<small>S.A. DE C.V.</small></span>
+      </span>
+    </a>
+    <nav class="menu" id="menu">
       <a href="#inicio">Inicio</a>
       <a href="#categorias">Productos</a>
       <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Nosotros</a>
       <a href="#marcas">Marcas</a>
-      <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a href="#contacto" class="btn btn-amarillo">Cotizar</a>
-      <button class="hamb" id="hamb" aria-label="Abrir menú">☰</button>
+      <a href="#contacto" class="btn btn-rojo">Cotizar</a>
+      <button class="hamb" id="hamb" aria-label="Menú">☰</button>
     </div>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="contenedor">
-    <span class="eslogan">SOLUCIONES Y SERVICIOS A SUS NECESIDADES INDUSTRIALES</span>
-    <h1>Ferretería industrial: <b>herramientas, material eléctrico, tornillería</b> y mucho más</h1>
-    <p>Tu proveedor industrial en Tecate, B.C. Herramientas, acero, tubería, EPP y suministros MRO para maquiladoras y empresas. Atención cercana y entrega a tiempo.</p>
+  <div class="bg ph"><img alt="" data-img="hero" onerror="this.classList.add('fail')"></div>
+  <div class="contenedor hero-inner">
+    <span class="pill">⚙️ Soluciones y servicios a sus necesidades industriales</span>
+    <h1>Tu proveedor de <b>ferretería y suministro industrial</b> en Tecate</h1>
+    <p>Herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO. Inventario amplio, marcas reconocidas y entrega a tiempo para maquiladoras y empresas.</p>
     <div class="acciones">
-      <a href="#catalogo" class="btn btn-amarillo">Ver catálogo</a>
-      <a href="https://wa.me/526656545282" target="_blank" rel="noopener" class="btn btn-wa">Cotizar por WhatsApp</a>
+      <a href="#categorias" class="btn btn-amarillo">Ver productos</a>
+      <a href="https://wa.me/526656545282" target="_blank" rel="noopener" class="btn btn-wa">💬 Hablar con un experto</a>
+      <a href="#catalogo" class="btn btn-ghost">Explorar catálogo</a>
     </div>
-    <div class="stats">
-      <div><b>+1,500</b><span>productos disponibles</span></div>
-      <div><b>24 h</b><span>respuesta a cotizaciones</span></div>
-      <div><b>Tecate</b><span>Baja California</span></div>
+    <div class="mini">
+      <span>✓ Atención local en Tecate, B.C.</span>
+      <span>✓ Cotización en menos de 24 h</span>
     </div>
   </div>
 </section>
+
+<!-- STATBAR -->
+<div class="contenedor statbar">
+  <div class="statbar-grid reveal">
+    <div class="it"><b>+1,500</b><span>Productos en catálogo</span></div>
+    <div class="it"><b>+10</b><span>Años de experiencia</span></div>
+    <div class="it"><b>24 h</b><span>Respuesta a cotizaciones</span></div>
+    <div class="it"><b>8</b><span>Líneas de producto</span></div>
+  </div>
+</div>
 
 <!-- CATEGORIAS -->
 <section class="seccion" id="categorias">
   <div class="contenedor">
-    <span class="barra-titulo"></span>
-    <h2>Nuestras <span class="marca-acento">líneas de producto</span></h2>
-    <p class="subtitulo">Da clic en una categoría para ver los productos disponibles en el catálogo.</p>
+    <div class="centro head-mb reveal">
+      <span class="overline">Nuestras líneas</span>
+      <h2 class="titulo">Explora nuestras <span class="ac">categorías</span></h2>
+      <p class="subt">Da clic en una categoría para ver los productos disponibles en el catálogo.</p>
+    </div>
     <div class="grid-cat" id="gridCat"></div>
   </div>
 </section>
 
-<!-- POR QUE FRAMA -->
-<section class="seccion" id="servicios">
+<!-- DESTACADOS -->
+<section class="seccion" id="destacados">
   <div class="contenedor">
-    <span class="barra-titulo"></span>
-    <h2>¿Por qué elegir <span class="marca-acento">FRAMA</span>?</h2>
-    <p class="subtitulo">Suministro industrial confiable, de principio a fin.</p>
-    <div class="grid-serv">
-      <div class="card-serv"><div class="ico">📦</div><h3>Inventario amplio</h3><p>Herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO.</p></div>
-      <div class="card-serv"><div class="ico">⏱️</div><h3>Respuesta rápida</h3><p>Cotizamos en menos de 24 horas con seguimiento personalizado.</p></div>
-      <div class="card-serv"><div class="ico">🏷️</div><h3>Marcas reconocidas</h3><p>Productos certificados de las mejores marcas industriales.</p></div>
-      <div class="card-serv"><div class="ico">📍</div><h3>En Tecate, B.C.</h3><p>Atención local para maquiladoras y empresas de la región.</p></div>
+    <div class="centro head-mb reveal">
+      <span class="overline">Lo más solicitado</span>
+      <h2 class="titulo">Productos <span class="ac">destacados</span></h2>
+      <p class="subt">Una muestra de lo que manejamos. Cotiza cualquier producto al instante por WhatsApp.</p>
+    </div>
+    <div class="grid-dest" id="gridDest"></div>
+  </div>
+</section>
+
+<!-- BIG STATS -->
+<section class="bigstats">
+  <div class="bg ph"><img alt="" data-img="stats" onerror="this.classList.add('fail')"></div>
+  <div class="contenedor">
+    <div class="inner">
+      <div class="reveal"><b>+10</b><span>Años de experiencia</span></div>
+      <div class="reveal"><b>+1,500</b><span>Productos disponibles</span></div>
+      <div class="reveal"><b><span class="y">8</span></b><span>Líneas de producto</span></div>
+      <div class="reveal"><b>100%</b><span>Enfoque industrial</span></div>
     </div>
   </div>
 </section>
@@ -320,9 +480,11 @@
 <!-- CATALOGO -->
 <section class="seccion" id="catalogo">
   <div class="contenedor">
-    <span class="barra-titulo"></span>
-    <h2>Catálogo</h2>
-    <p class="subtitulo">Filtra por categoría, busca por nombre o SKU y solicita tu cotización al instante.</p>
+    <div class="centro head-mb reveal">
+      <span class="overline">Catálogo completo</span>
+      <h2 class="titulo">Encuentra lo que <span class="ac">necesitas</span></h2>
+      <p class="subt">Filtra por categoría, busca por nombre o SKU y solicita tu cotización al instante.</p>
+    </div>
     <div class="cat-controles">
       <div class="buscador">🔎 <input type="search" id="busqueda" placeholder="Buscar producto, SKU o categoría…" aria-label="Buscar"></div>
       <button class="btn btn-borde" id="btnCSV">⬇️ Exportar CSV</button>
@@ -335,13 +497,55 @@
   </div>
 </section>
 
+<!-- POR QUE -->
+<section class="seccion" id="porque">
+  <div class="contenedor">
+    <div class="centro head-mb reveal">
+      <span class="overline">Por qué elegirnos</span>
+      <h2 class="titulo">La ventaja <span class="ac">FRAMA</span></h2>
+    </div>
+    <div class="grid-serv">
+      <div class="card-serv reveal"><div class="ico">📦</div><h3>Inventario amplio</h3><p>Herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO en un solo lugar.</p></div>
+      <div class="card-serv reveal"><div class="ico">⏱️</div><h3>Respuesta rápida</h3><p>Cotizamos en menos de 24 horas, con atención y seguimiento personalizado.</p></div>
+      <div class="card-serv reveal"><div class="ico">🏅</div><h3>Marcas reconocidas</h3><p>Productos certificados de las mejores marcas industriales del mercado.</p></div>
+      <div class="card-serv reveal"><div class="ico">🚚</div><h3>Entrega a tiempo</h3><p>Logística confiable para maquiladoras y empresas de Tecate y la región.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="seccion" id="sobre">
+  <div class="contenedor">
+    <div class="grid">
+      <div class="foto-wrap reveal">
+        <div class="foto ph"><img alt="Almacén industrial FRAMA" data-img="sobre" onerror="this.classList.add('fail')"></div>
+        <div class="tag"><b>+10</b><span>años sirviendo a la industria</span></div>
+      </div>
+      <div class="reveal">
+        <span class="overline">Sobre nosotros</span>
+        <h2 class="titulo">Soluciones a tus necesidades <span class="ac">industriales</span></h2>
+        <p class="subt">FRAMA Industrial Supply, S.A. de C.V. es una ferretería y proveedor industrial en Tecate, B.C., enfocado en abastecer a maquiladoras y empresas con atención cercana y producto disponible.</p>
+        <ul>
+          <li>Herramientas, material eléctrico, tornillería, acero y tubería.</li>
+          <li>Equipo de protección personal (EPP) y herramienta neumática.</li>
+          <li>Suministros para mantenimiento industrial (MRO).</li>
+          <li>Cotizaciones rápidas y entrega puntual en la región.</li>
+        </ul>
+        <a href="#contacto" class="btn btn-navy">Contáctanos →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- MARCAS -->
 <section class="seccion" id="marcas">
   <div class="contenedor">
-    <span class="barra-titulo" style="margin-left:auto;margin-right:auto;display:block"></span>
-    <h2>Marcas que manejamos</h2>
-    <p class="subtitulo" style="margin-left:auto;margin-right:auto">Trabajamos con marcas líderes para garantizar calidad y disponibilidad.</p>
-    <div class="tira-marcas">
+    <div class="centro head-mb reveal">
+      <span class="overline">Confianza</span>
+      <h2 class="titulo">Marcas que <span class="ac">manejamos</span></h2>
+      <p class="subt">Trabajamos con marcas líderes para garantizar calidad y disponibilidad.</p>
+    </div>
+    <div class="tira-marcas reveal">
       <span class="marca-chip">Truper</span>
       <span class="marca-chip">DeWalt</span>
       <span class="marca-chip">Milwaukee</span>
@@ -349,54 +553,32 @@
       <span class="marca-chip">Urrea</span>
       <span class="marca-chip">Surtek</span>
     </div>
-    <p class="subtitulo" style="margin:18px auto 0;font-size:14px">* Marcas de referencia. Confírmanos disponibilidad de tu marca preferida.</p>
-  </div>
-</section>
-
-<!-- NOSOTROS -->
-<section class="seccion" id="nosotros">
-  <div class="contenedor">
-    <div class="grid-nos">
-      <div>
-        <span class="barra-titulo"></span>
-        <h2>Nosotros</h2>
-        <p class="subtitulo">FRAMA Industrial Supply, S.A. de C.V. es una ferretería y proveedor industrial en Tecate, B.C., enfocado en dar soluciones y servicios a las necesidades de maquiladoras y empresas, con atención cercana y abasto confiable.</p>
-        <ul>
-          <li>Herramientas, material eléctrico, tornillería, acero y tubería.</li>
-          <li>Equipo de protección personal (EPP) y herramienta neumática.</li>
-          <li>Suministros para mantenimiento industrial (MRO).</li>
-          <li>Cotizaciones rápidas y entrega puntual en la región.</li>
-        </ul>
-      </div>
-      <div class="panel-nos">
-        <div><b>+1,500</b><span>productos en catálogo</span></div>
-        <div><b>24 h</b><span>respuesta a cotizaciones</span></div>
-        <div><b>Tecate</b><span>Baja California</span></div>
-        <div><b>100%</b><span>enfoque industrial</span></div>
-      </div>
-    </div>
+    <p class="subt centro" style="font-size:14px;margin-top:18px">* Marcas de referencia. Confírmanos disponibilidad de tu marca preferida.</p>
   </div>
 </section>
 
 <!-- CONTACTO -->
 <section class="seccion" id="contacto">
-  <div class="contenedor">
-    <span class="barra-titulo"></span>
-    <h2>Contacto</h2>
-    <p class="subtitulo">Solicita tu cotización. Te atendemos por WhatsApp o teléfono.</p>
+  <div class="bg"></div>
+  <div class="contenedor inner">
+    <div class="centro reveal">
+      <span class="overline">Contacto</span>
+      <h2 class="titulo">Solicita tu <span style="color:var(--amarillo)">cotización</span></h2>
+      <p class="subt" style="color:#dde7f7;margin-left:auto;margin-right:auto">Te atendemos por WhatsApp o teléfono. Respuesta en menos de 24 horas.</p>
+    </div>
     <div class="grid-cont">
-      <div class="cont-info">
-        <a href="tel:+526656545282"><span class="ico">📞</span> (665) 654-5282</a>
-        <a href="https://wa.me/526656545282" target="_blank" rel="noopener"><span class="ico">💬</span> WhatsApp: +52 665 654 5282</a>
-        <div><span class="ico">📍</span> Puebla 91-2, Col. Emiliano Zapata, C.P. 21460, Tecate, Baja California, México</div>
-        <div><span class="ico">🕗</span> Lunes a viernes 8:00–17:00 · Sábado y domingo cerrado</div>
+      <div class="cont-info reveal">
+        <div class="row"><div class="ico">📞</div><div><b>Teléfono</b><a href="tel:+526656545282">(665) 654-5282</a></div></div>
+        <div class="row"><div class="ico">💬</div><div><b>WhatsApp</b><a href="https://wa.me/526656545282" target="_blank" rel="noopener">+52 665 654 5282</a></div></div>
+        <div class="row"><div class="ico">📍</div><div><b>Dirección</b>Puebla 91-2, Col. Emiliano Zapata, C.P. 21460, Tecate, Baja California, México</div></div>
+        <div class="row"><div class="ico">🕗</div><div><b>Horario</b>Lunes a viernes 8:00–17:00 · Sábado y domingo cerrado</div></div>
         <a class="btn btn-amarillo" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=FRAMA+Industrial+Supply+Puebla+91-2+Emiliano+Zapata+21460+Tecate+Baja+California">📍 Cómo llegar</a>
       </div>
-      <form class="cotiza" id="formCotiza">
+      <form class="cotiza reveal" id="formCotiza">
         <label>Nombre / Empresa<input type="text" name="nombre" required placeholder="Tu nombre o empresa"></label>
         <label>Teléfono<input type="tel" name="telefono" placeholder="Tu número (opcional)"></label>
         <label>¿Qué necesitas?<textarea name="mensaje" required placeholder="Describe los productos y cantidades…"></textarea></label>
-        <button type="submit" class="btn btn-wa">Enviar por WhatsApp</button>
+        <button type="submit" class="btn btn-wa" style="justify-content:center">Enviar por WhatsApp</button>
       </form>
     </div>
   </div>
@@ -407,83 +589,95 @@
   <div class="contenedor">
     <div class="pie-grid">
       <div>
-        <div class="pie-logo"><img src="assets/img/frama-logo.png" alt="FRAMA Industrial Supply"></div>
+        <span class="brand-tx">
+          <span class="brand-name">FRA<span style="color:var(--rojo)">MA</span></span>
+          <span class="brand-sub">Industrial<br>Supply</span>
+        </span>
         <p>Soluciones y servicios a sus necesidades industriales. Ferretería industrial en Tecate, B.C.: herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO.</p>
       </div>
       <div>
         <h4>Enlaces</h4>
         <a href="#categorias">Productos</a>
         <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Nosotros</a>
         <a href="#marcas">Marcas</a>
-        <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div>
         <h4>Contacto</h4>
-        <a href="tel:+526656545282">(665) 654-5282</a>
-        <a href="https://wa.me/526656545282" target="_blank" rel="noopener">WhatsApp</a>
-        <a>Puebla 91-2, Col. Emiliano Zapata</a>
-        <a>C.P. 21460, Tecate, B.C., México</a>
-        <a>Lun–Vie 8:00–17:00</a>
+        <div class="crow">📞 <a href="tel:+526656545282">(665) 654-5282</a></div>
+        <div class="crow">💬 <a href="https://wa.me/526656545282" target="_blank" rel="noopener">WhatsApp: +52 665 654 5282</a></div>
+        <div class="crow">📍 <span>Puebla 91-2, Col. Emiliano Zapata,<br>C.P. 21460, Tecate, B.C., México</span></div>
+        <div class="crow">🕗 <span>Lun–Vie 8:00–17:00</span></div>
       </div>
     </div>
-    <div class="pie-copy">© <span id="anio"></span> FRAMA Industrial Supply, S.A. de C.V. Todos los derechos reservados.</div>
+    <div class="pie-copy">© <span id="anio"></span> FRAMA Industrial Supply, S.A. de C.V. · Todos los derechos reservados.</div>
   </div>
 </footer>
 
 <a class="wa-float" href="https://wa.me/526656545282" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<button class="top-btn" id="topBtn" aria-label="Subir">↑</button>
 
 <!-- ====== SCRIPTS ====== -->
 <script>
+ // =================== IMÁGENES (fotos reales vía CDN; con respaldo de marca) ===================
+ const U = (id,w=900) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
+ const IMG = {
+   hero:  U("1581094288338-2314dddb7ece",1920),
+   stats: U("1565514020179-026b92b84bb6",1600),
+   sobre: U("1504917595217-d4dc5ebe6122",1200)
+ };
+
  // =================== DATA ===================
  const CATEGORIES = [
-   { id:"herramientas", name:"Herramientas",         icon:"🧰" },
-   { id:"electrico",    name:"Material eléctrico",    icon:"⚡" },
-   { id:"neumatica",    name:"Herramienta neumática", icon:"💨" },
-   { id:"tornilleria",  name:"Tornillería",           icon:"🔩" },
-   { id:"acero",        name:"Acero y metales",       icon:"🏗️" },
-   { id:"tuberia",      name:"Tubería y conexiones",  icon:"🔧" },
-   { id:"epp",          name:"Protección (EPP)",      icon:"🦺" },
-   { id:"mro",          name:"MRO / Mantenimiento",   icon:"🛠️" }
+   { id:"herramientas", name:"Herramientas",         icon:"🧰", img:U("1581244277943-fe4a9c777189") },
+   { id:"electrico",    name:"Material eléctrico",    icon:"⚡", img:U("1621905251189-08b45d6a269e") },
+   { id:"neumatica",    name:"Herramienta neumática", icon:"💨", img:U("1530124566582-a618bc2615dc") },
+   { id:"tornilleria",  name:"Tornillería",           icon:"🔩", img:U("1606760227091-3dd870d97f1d") },
+   { id:"acero",        name:"Acero y metales",       icon:"🏗️", img:U("1565374790533-1d0c8b3b4e94") },
+   { id:"tuberia",      name:"Tubería y conexiones",  icon:"🔧", img:U("1581092446327-9b52bd1570c2") },
+   { id:"epp",          name:"Protección (EPP)",      icon:"🦺", img:U("1578091879915-2a8f9d3a3b3a") },
+   { id:"mro",          name:"MRO / Mantenimiento",   icon:"🛠️", img:U("1504148455328-c376907d081c") }
  ];
 
  const PRODUCTS = [
-   { id:"p001", name:"Juego de desarmadores 6 pzas",   category:"herramientas", sku:"HER-DS-06",  unit:"juego", description:"Desarmadores planos y de cruz con mango ergonómico." },
+   { id:"p001", name:"Juego de desarmadores 6 pzas",   category:"herramientas", sku:"HER-DS-06",  unit:"juego", destacado:true,  badge:"Más vendido", description:"Desarmadores planos y de cruz con mango ergonómico antiderrapante." },
    { id:"p002", name:"Llave ajustable 10\"",            category:"herramientas", sku:"HER-LL-10",  unit:"pieza", description:"Llave ajustable de acero al cromo vanadio, 10 pulgadas." },
-   { id:"p003", name:"Taladro inalámbrico 20V",        category:"herramientas", sku:"HER-TL-20",  unit:"pieza", description:"Taladro percutor con batería de litio y cargador." },
-   { id:"p004", name:"Cable THW calibre 12",           category:"electrico",    sku:"ELE-THW-12", unit:"metro", description:"Cable de cobre THW 600V, calibre 12 AWG." },
+   { id:"p003", name:"Taladro inalámbrico 20V",        category:"herramientas", sku:"HER-TL-20",  unit:"pieza", destacado:true,  badge:"Destacado", description:"Taladro percutor con batería de litio, velocidad variable y cargador." },
+   { id:"p004", name:"Cable THW calibre 12",           category:"electrico",    sku:"ELE-THW-12", unit:"metro", description:"Cable de cobre THW 600V, calibre 12 AWG para instalaciones." },
    { id:"p005", name:"Contactor tripolar 25A",         category:"electrico",    sku:"ELE-CT-25",  unit:"pieza", description:"Contactor 3 polos 25A, bobina 110/220V, uso industrial." },
    { id:"p006", name:"Interruptor termomagnético 2x30",category:"electrico",    sku:"ELE-IT-230", unit:"pieza", description:"Interruptor termomagnético 2 polos 30A para tablero." },
-   { id:"p007", name:"Pistola de impacto neumática 1/2\"",category:"neumatica", sku:"NEU-IMP-12", unit:"pieza", description:"Pistola de impacto neumática 1/2\", alto torque." },
-   { id:"p008", name:"Pulidora neumática",             category:"neumatica",    sku:"NEU-PUL-01", unit:"pieza", description:"Pulidora/esmeriladora neumática para taller." },
+   { id:"p007", name:"Pistola de impacto neumática 1/2\"",category:"neumatica", sku:"NEU-IMP-12", unit:"pieza", destacado:true,  badge:"Pro", description:"Pistola de impacto neumática 1/2\", alto torque para taller." },
+   { id:"p008", name:"Pulidora neumática",             category:"neumatica",    sku:"NEU-PUL-01", unit:"pieza", description:"Pulidora/esmeriladora neumática para acabado y desbaste." },
    { id:"p009", name:"Tornillo hexagonal 3/8\" (caja)", category:"tornilleria", sku:"TOR-HEX-38", unit:"caja",  description:"Tornillo cabeza hexagonal 3/8\", grado 5, por caja." },
    { id:"p010", name:"Taquete de expansión 1/4\" (caja)",category:"tornilleria",sku:"TOR-TAQ-14", unit:"caja",  description:"Taquete de expansión metálico 1/4\", por caja." },
-   { id:"p011", name:"Solera de acero 1/8\" x 1\"",      category:"acero",       sku:"ACE-SOL-18", unit:"metro", description:"Solera de acero al carbón, 1/8\" de espesor x 1\"." },
+   { id:"p011", name:"Solera de acero 1/8\" x 1\"",      category:"acero",       sku:"ACE-SOL-18", unit:"metro", description:"Solera de acero al carbón, 1/8\" de espesor x 1\" de ancho." },
    { id:"p012", name:"Ángulo de acero 1\"",             category:"acero",        sku:"ACE-ANG-1",  unit:"metro", description:"Ángulo de acero estructural de 1 pulgada." },
    { id:"p013", name:"Tubo conduit galvanizado 3/4\"",  category:"tuberia",      sku:"TUB-CON-34", unit:"tramo", description:"Tubo conduit pared gruesa galvanizado, 3/4\"." },
    { id:"p014", name:"Codo PVC 90° 1\"",                category:"tuberia",      sku:"TUB-CODO-1", unit:"pieza", description:"Codo de PVC hidráulico 90 grados, 1 pulgada." },
-   { id:"p015", name:"Guantes de carnaza",             category:"epp",          sku:"EPP-GC-01",  unit:"par",   description:"Guantes de carnaza reforzados para trabajo pesado." },
-   { id:"p016", name:"Lentes de seguridad claros",     category:"epp",          sku:"EPP-LS-01",  unit:"pieza", description:"Lentes de protección con resistencia a impacto." },
-   { id:"p017", name:"Grasa multiusos de litio 400g",  category:"mro",          sku:"MRO-GR-400", unit:"tubo",  description:"Grasa lubricante de litio para maquinaria." },
+   { id:"p015", name:"Guantes de carnaza",             category:"epp",          sku:"EPP-GC-01",  unit:"par",   destacado:true,  badge:"Top EPP", description:"Guantes de carnaza reforzados para trabajo pesado." },
+   { id:"p016", name:"Lentes de seguridad claros",     category:"epp",          sku:"EPP-LS-01",  unit:"pieza", description:"Lentes de protección con resistencia a impacto, antiempañante." },
+   { id:"p017", name:"Grasa multiusos de litio 400g",  category:"mro",          sku:"MRO-GR-400", unit:"tubo",  description:"Grasa lubricante de litio para baleros y maquinaria." },
    { id:"p018", name:"Cinta de aislar",                category:"mro",          sku:"MRO-CA-01",  unit:"rollo", description:"Cinta aislante de uso eléctrico, alta adherencia." }
  ];
 
  // =================== CONFIG ===================
- const WHATSAPP    = "526656545282";  // formato internacional sin signos
+ const WHATSAPP    = "526656545282";
  const TEL         = "+526656545282";
- const TEL_DISPLAY = "(665) 654-5282";
 
  // =================== HELPERS ===================
- const $  = (sel, ctx=document) => ctx.querySelector(sel);
- const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
- const categoryName = (id) => (CATEGORIES.find(c => c.id === id) || {}).name || id;
+ const $  = (s, c=document) => c.querySelector(s);
+ const $$ = (s, c=document) => Array.from(c.querySelectorAll(s));
+ const categoryName  = (id) => (CATEGORIES.find(c => c.id === id) || {}).name || id;
+ const categoryImg   = (id) => (CATEGORIES.find(c => c.id === id) || {}).img || "";
  const waLink = (texto) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`;
+ const imgTag = (src, alt="") => `<img alt="${alt}" src="${src}" loading="lazy" onerror="this.classList.add('fail')">`;
 
  // =================== ESTADO ===================
  let filtroActivo = "all";
  let textoBusqueda = "";
 
- // =================== RENDER, FILTROS Y ACCIONES ===================
+ // =================== RENDER ===================
  function productosFiltrados(){
    const t = textoBusqueda.trim().toLowerCase();
    return PRODUCTS.filter(p => {
@@ -496,14 +690,36 @@
  function renderCategorias(){
    const cont = $("#gridCat");
    cont.innerHTML = CATEGORIES.map(c =>
-     `<div class="cat-card" data-cat="${c.id}"><div class="ico">${c.icon}</div><span>${c.name}</span></div>`
+     `<div class="cat-card" data-cat="${c.id}">
+        <div class="ph">${imgTag(c.img, c.name)}</div>
+        <div class="flecha">→</div>
+        <div class="cont"><span class="ico">${c.icon}</span><span>${c.name}</span></div>
+      </div>`
    ).join("");
    $$(".cat-card", cont).forEach(card => card.addEventListener("click", () => {
      filtroActivo = card.dataset.cat;
-     renderFiltros();
-     renderProductos();
+     renderFiltros(); renderProductos();
      $("#catalogo").scrollIntoView({ behavior:"smooth" });
    }));
+ }
+
+ function renderDestacados(){
+   const cont = $("#gridDest");
+   const dest = PRODUCTS.filter(p => p.destacado).slice(0,6);
+   cont.innerHTML = dest.map(p =>
+     `<article class="dest-card">
+        <div class="foto">
+          ${p.badge ? `<span class="badge">${p.badge}</span>` : ""}
+          <div class="ph">${imgTag(categoryImg(p.category), p.name)}</div>
+        </div>
+        <div class="body">
+          <span class="et">${categoryName(p.category)}</span>
+          <h3>${p.name}</h3>
+          <p>${p.description}</p>
+          <a class="btn btn-rojo" target="_blank" rel="noopener" href="${waLink(mensajeProducto(p))}">Cotizar ahora →</a>
+        </div>
+      </article>`
+   ).join("");
  }
 
  function renderFiltros(){
@@ -513,9 +729,7 @@
      `<button class="chip ${c.id===filtroActivo?'activo':''}" data-cat="${c.id}">${c.name}</button>`
    ).join("");
    $$(".chip", cont).forEach(ch => ch.addEventListener("click", () => {
-     filtroActivo = ch.dataset.cat;
-     renderFiltros();
-     renderProductos();
+     filtroActivo = ch.dataset.cat; renderFiltros(); renderProductos();
    }));
  }
 
@@ -525,13 +739,16 @@
 
  function tarjetaProducto(p){
    return `<article class="card-prod">
-     <span class="etiqueta">${categoryName(p.category)}</span>
-     <h3>${p.name}</h3>
-     <div class="sku">SKU: ${p.sku} · ${p.unit}</div>
-     <p>${p.description}</p>
-     <div class="pie">
-       <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink(mensajeProducto(p))}">Cotizar</a>
-       <a class="btn btn-borde" href="tel:${TEL}">Llamar</a>
+     <div class="foto"><div class="ph">${imgTag(categoryImg(p.category), p.name)}</div></div>
+     <div class="body">
+       <span class="et">${categoryName(p.category)}</span>
+       <h3>${p.name}</h3>
+       <div class="sku">SKU: ${p.sku} · ${p.unit}</div>
+       <p>${p.description}</p>
+       <div class="pie">
+         <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink(mensajeProducto(p))}">Cotizar</a>
+         <a class="btn btn-borde" href="tel:${TEL}">Llamar</a>
+       </div>
      </div>
    </article>`;
  }
@@ -539,28 +756,20 @@
  function renderProductos(){
    const grid = $("#gridProd");
    const lista = productosFiltrados();
-   if(lista.length === 0){
-     grid.innerHTML = `<div class="vacio">No se encontraron productos. Prueba con otra búsqueda o categoría.</div>`;
-     return;
-   }
-   grid.innerHTML = lista.map(tarjetaProducto).join("");
+   grid.innerHTML = lista.length === 0
+     ? `<div class="vacio">No se encontraron productos. Prueba con otra búsqueda o categoría.</div>`
+     : lista.map(tarjetaProducto).join("");
  }
 
  // ----- CSV -----
- function escapeCSV(valor){
-   const s = String(valor ?? "");
-   return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s;
- }
+ function escapeCSV(v){ const s=String(v??""); return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s; }
  function generarCSV(lista = PRODUCTS){
-   const encabezados = ["id","name","category","sku","unit","description"];
-   const filas = lista.map(p => encabezados.map(k =>
-     escapeCSV(k === "category" ? categoryName(p.category) : p[k])
-   ).join(","));
-   return [encabezados.join(","), ...filas].join("\n");
+   const h = ["id","name","category","sku","unit","description"];
+   const filas = lista.map(p => h.map(k => escapeCSV(k==="category"?categoryName(p.category):p[k])).join(","));
+   return [h.join(","), ...filas].join("\n");
  }
  function descargarCSV(){
-   const csv = generarCSV(productosFiltrados());
-   const blob = new Blob([csv], { type:"text/csv;charset=utf-8;" });
+   const blob = new Blob([generarCSV(productosFiltrados())], { type:"text/csv;charset=utf-8;" });
    const url = URL.createObjectURL(blob);
    const a = document.createElement("a");
    a.href = url; a.download = "catalogo-frama.csv";
@@ -568,71 +777,88 @@
    URL.revokeObjectURL(url);
  }
 
- // ----- Formulario de cotización (WhatsApp) -----
+ // ----- Formulario (WhatsApp) -----
  function mensajeFormulario(form){
-   const datos = new FormData(form);
-   return `Solicitud de cotización - FRAMA\nNombre/Empresa: ${datos.get("nombre")||""}\nTeléfono: ${datos.get("telefono")||""}\n\n${datos.get("mensaje")||""}`;
- }
- function initFormulario(){
-   const form = $("#formCotiza");
-   form.addEventListener("submit", (e) => {
-     e.preventDefault();
-     window.open(waLink(mensajeFormulario(form)), "_blank", "noopener");
-   });
+   const d = new FormData(form);
+   return `Solicitud de cotización - FRAMA\nNombre/Empresa: ${d.get("nombre")||""}\nTeléfono: ${d.get("telefono")||""}\n\n${d.get("mensaje")||""}`;
  }
 
- // ----- Misc UI -----
+ // ----- Imágenes de marco (hero/stats/sobre) -----
+ function cargarImagenes(){
+   $$("[data-img]").forEach(el => { el.src = IMG[el.dataset.img] || ""; });
+ }
+
+ // ----- UI -----
  function initUI(){
-   $("#busqueda").addEventListener("input", (e) => { textoBusqueda = e.target.value; renderProductos(); });
+   $("#busqueda").addEventListener("input", e => { textoBusqueda = e.target.value; renderProductos(); });
    $("#btnCSV").addEventListener("click", descargarCSV);
-   $("#hamb").addEventListener("click", () => {
-     const menu = $(".menu");
-     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+   $("#formCotiza").addEventListener("submit", e => {
+     e.preventDefault();
+     window.open(waLink(mensajeFormulario(e.target)), "_blank", "noopener");
    });
+   const menu = $("#menu");
+   $("#hamb").addEventListener("click", () => menu.classList.toggle("open"));
+   $$("#menu a").forEach(a => a.addEventListener("click", () => menu.classList.remove("open")));
+   $("#topBtn").addEventListener("click", () => window.scrollTo({ top:0, behavior:"smooth" }));
    $("#anio").textContent = new Date().getFullYear();
+
+   const onScroll = () => {
+     $("#nav").classList.toggle("scrolled", window.scrollY > 8);
+     $("#topBtn").classList.toggle("show", window.scrollY > 400);
+   };
+   window.addEventListener("scroll", onScroll); onScroll();
+
+   // reveal on scroll (con respaldo: nunca deja contenido oculto)
+   const reveals = $$(".reveal");
+   const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+   if(!("IntersectionObserver" in window) || reduce){
+     reveals.forEach(el => el.classList.add("in"));
+   } else {
+     const io = new IntersectionObserver((entries) => {
+       entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+     }, { threshold:.05, rootMargin:"0px 0px -40px 0px" });
+     reveals.forEach(el => io.observe(el));
+     // respaldo: si algo no se reveló, mostrarlo de todas formas
+     setTimeout(() => reveals.forEach(el => el.classList.add("in")), 2500);
+   }
  }
 
  function init(){
+   cargarImagenes();
    renderCategorias();
+   renderDestacados();
    renderFiltros();
    renderProductos();
-   initFormulario();
    initUI();
  }
 
  // =================== TESTS ===================
  function runTests(){
-   const results = [];
-   const assert = (nombre, cond) => results.push({ nombre, ok: !!cond });
-
-   assert("Hay categorías", CATEGORIES.length > 0);
-   assert("Hay productos", PRODUCTS.length > 0);
-   assert("Cada categoría tiene ícono", CATEGORIES.every(c => !!c.icon));
-   assert("IDs de producto únicos", new Set(PRODUCTS.map(p=>p.id)).size === PRODUCTS.length);
-   assert("SKUs únicos", new Set(PRODUCTS.map(p=>p.sku)).size === PRODUCTS.length);
-   assert("Cada producto tiene categoría válida", PRODUCTS.every(p => CATEGORIES.some(c => c.id === p.category)));
-   assert("Cada producto tiene nombre, sku, unidad y descripción", PRODUCTS.every(p => p.name && p.sku && p.unit && p.description));
-
-   const guarda = [filtroActivo, textoBusqueda];
-   filtroActivo = "all"; textoBusqueda = "";
-   assert("Filtro 'all' devuelve todos", productosFiltrados().length === PRODUCTS.length);
-   filtroActivo = "herramientas";
-   assert("Filtro por categoría funciona", productosFiltrados().every(p => p.category === "herramientas"));
-   filtroActivo = "all"; textoBusqueda = PRODUCTS[0].sku;
-   assert("Búsqueda por SKU funciona", productosFiltrados().some(p => p.id === PRODUCTS[0].id));
-   [filtroActivo, textoBusqueda] = guarda;
-
-   const csv = generarCSV();
-   assert("CSV tiene encabezado + filas", csv.split("\n").length === PRODUCTS.length + 1);
-   assert("CSV escapa comillas/comas", escapeCSV('a,"b"') === '"a,""b"""');
-
-   assert("WhatsApp en formato internacional", /^\d{10,15}$/.test(WHATSAPP));
-   assert("Teléfono válido", /^\+\d{10,15}$/.test(TEL));
-
-   const fallidos = results.filter(r => !r.ok);
-   if(fallidos.length) console.error(`❌ ${fallidos.length} prueba(s) fallida(s):`, fallidos.map(r=>r.nombre));
-   else console.log(`✅ ${results.length} pruebas del catálogo pasaron correctamente.`);
-   return fallidos.length === 0;
+   const r = []; const a = (n,c)=>r.push({n,ok:!!c});
+   a("Hay categorías", CATEGORIES.length>0);
+   a("Hay productos", PRODUCTS.length>0);
+   a("Cada categoría tiene ícono e imagen", CATEGORIES.every(c=>c.icon && c.img));
+   a("IDs de producto únicos", new Set(PRODUCTS.map(p=>p.id)).size===PRODUCTS.length);
+   a("SKUs únicos", new Set(PRODUCTS.map(p=>p.sku)).size===PRODUCTS.length);
+   a("Categoría válida en cada producto", PRODUCTS.every(p=>CATEGORIES.some(c=>c.id===p.category)));
+   a("Campos completos", PRODUCTS.every(p=>p.name&&p.sku&&p.unit&&p.description));
+   a("Hay productos destacados", PRODUCTS.some(p=>p.destacado));
+   const g=[filtroActivo,textoBusqueda];
+   filtroActivo="all"; textoBusqueda="";
+   a("Filtro 'all'", productosFiltrados().length===PRODUCTS.length);
+   filtroActivo="herramientas";
+   a("Filtro por categoría", productosFiltrados().every(p=>p.category==="herramientas"));
+   filtroActivo="all"; textoBusqueda=PRODUCTS[0].sku;
+   a("Búsqueda por SKU", productosFiltrados().some(p=>p.id===PRODUCTS[0].id));
+   [filtroActivo,textoBusqueda]=g;
+   a("CSV encabezado+filas", generarCSV().split("\n").length===PRODUCTS.length+1);
+   a("CSV escapa comillas", escapeCSV('a,"b"')==='"a,""b"""');
+   a("WhatsApp formato", /^\d{10,15}$/.test(WHATSAPP));
+   a("Teléfono formato", /^\+\d{10,15}$/.test(TEL));
+   const f=r.filter(x=>!x.ok);
+   if(f.length) console.error(`❌ ${f.length} prueba(s) fallida(s):`, f.map(x=>x.n));
+   else console.log(`✅ ${r.length} pruebas pasaron correctamente.`);
+   return f.length===0;
  }
 
  // =================== ARRANQUE ===================
