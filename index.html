@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FRAMA INDUSTRIAL SUPPLY | Proveedor Industrial</title>
+<meta name="description" content="FRAMA Industrial Supply: proveedor industrial para maquiladoras y empresas. Catálogo amplio de MRO, empaques, adhesivos, PPE, herramientas y más.">
+
+<!-- Fuente Google (Inter) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+<style>
+ /* ====== ESTILOS ====== */
+ :root{
+   --azul:#0b3d91;
+   --azul-osc:#072a66;
+   --naranja:#ff7a00;
+   --gris:#5b6470;
+   --gris-claro:#f4f6f9;
+   --borde:#e2e7ee;
+   --texto:#1c2530;
+   --blanco:#ffffff;
+   --radio:14px;
+   --sombra:0 8px 24px rgba(7,42,102,.10);
+   --ancho:1180px;
+ }
+ *{box-sizing:border-box}
+ html{scroll-behavior:smooth}
+ body{
+   margin:0;
+   font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+   color:var(--texto);
+   background:var(--blanco);
+   line-height:1.55;
+ }
+ a{color:inherit;text-decoration:none}
+ img{max-width:100%;display:block}
+ .contenedor{max-width:var(--ancho);margin:0 auto;padding:0 20px}
+ .btn{
+   display:inline-flex;align-items:center;gap:8px;
+   padding:12px 20px;border-radius:999px;border:0;cursor:pointer;
+   font-weight:700;font-size:15px;font-family:inherit;transition:.18s;
+ }
+ .btn-primario{background:var(--naranja);color:#fff}
+ .btn-primario:hover{filter:brightness(1.07);transform:translateY(-1px)}
+ .btn-claro{background:#fff;color:var(--azul)}
+ .btn-claro:hover{transform:translateY(-1px)}
+ .btn-borde{background:transparent;color:var(--azul);border:2px solid var(--azul)}
+ .btn-borde:hover{background:var(--azul);color:#fff}
+ .seccion{padding:72px 0}
+ .seccion h2{font-size:32px;margin:0 0 8px;font-weight:800;letter-spacing:-.5px}
+ .seccion .subtitulo{color:var(--gris);margin:0 0 36px;font-size:17px}
+
+ /* NAV */
+ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+   backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
+ .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+ .marca{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--azul)}
+ .marca .punto{width:12px;height:12px;border-radius:3px;background:var(--naranja);display:inline-block}
+ .menu{display:flex;gap:26px;align-items:center}
+ .menu a{font-weight:600;color:var(--gris);font-size:15px}
+ .menu a:hover{color:var(--azul)}
+ .nav-cta{display:flex;gap:10px;align-items:center}
+ .hamb{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--azul)}
+
+ /* HERO */
+ .hero{background:linear-gradient(135deg,var(--azul) 0%,var(--azul-osc) 100%);color:#fff;padding:90px 0}
+ .hero h1{font-size:46px;line-height:1.1;margin:0 0 18px;font-weight:800;letter-spacing:-1px;max-width:780px}
+ .hero p{font-size:19px;max-width:640px;opacity:.92;margin:0 0 30px}
+ .hero .acciones{display:flex;gap:14px;flex-wrap:wrap}
+ .hero .stats{display:flex;gap:40px;margin-top:54px;flex-wrap:wrap}
+ .hero .stats div b{display:block;font-size:30px;font-weight:800}
+ .hero .stats div span{opacity:.85;font-size:14px}
+
+ /* SERVICIOS */
+ .grid-serv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+ .card-serv{background:var(--blanco);border:1px solid var(--borde);border-radius:var(--radio);
+   padding:26px;transition:.18s}
+ .card-serv:hover{box-shadow:var(--sombra);transform:translateY(-3px)}
+ .card-serv .ico{font-size:30px;margin-bottom:12px}
+ .card-serv h3{margin:0 0 8px;font-size:18px}
+ .card-serv p{margin:0;color:var(--gris);font-size:15px}
+
+ /* CATALOGO */
+ #catalogo{background:var(--gris-claro)}
+ .cat-controles{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
+ .buscador{flex:1;min-width:220px;display:flex;align-items:center;gap:8px;background:#fff;
+   border:1px solid var(--borde);border-radius:999px;padding:10px 18px}
+ .buscador input{border:0;outline:0;flex:1;font-size:15px;font-family:inherit;background:transparent}
+ .filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+ .chip{padding:8px 16px;border-radius:999px;border:1px solid var(--borde);background:#fff;
+   cursor:pointer;font-weight:600;font-size:14px;font-family:inherit;color:var(--gris);transition:.15s}
+ .chip:hover{border-color:var(--azul);color:var(--azul)}
+ .chip.activo{background:var(--azul);border-color:var(--azul);color:#fff}
+ .grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+ .card-prod{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);
+   padding:18px;display:flex;flex-direction:column;gap:8px;transition:.18s}
+ .card-prod:hover{box-shadow:var(--sombra)}
+ .card-prod .etiqueta{align-self:flex-start;background:#eef3ff;color:var(--azul);
+   font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px}
+ .card-prod h3{margin:4px 0 0;font-size:16px}
+ .card-prod .sku{font-size:12px;color:var(--gris)}
+ .card-prod p{margin:0;color:var(--gris);font-size:14px;flex:1}
+ .card-prod .pie{display:flex;gap:8px;margin-top:6px}
+ .card-prod .pie .btn{padding:9px 14px;font-size:13px}
+ .vacio{padding:40px;text-align:center;color:var(--gris);grid-column:1/-1}
+ .cat-acciones{margin-top:28px;display:flex;justify-content:center}
+
+ /* NOSOTROS */
+ #nosotros .grid-nos{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+ #nosotros ul{padding:0;margin:18px 0 0;list-style:none;display:grid;gap:12px}
+ #nosotros li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+ #nosotros li::before{content:"✓";color:var(--naranja);font-weight:800}
+ .panel-nos{background:var(--gris-claro);border-radius:var(--radio);padding:30px;display:grid;
+   grid-template-columns:1fr 1fr;gap:22px}
+ .panel-nos b{display:block;font-size:28px;color:var(--azul);font-weight:800}
+ .panel-nos span{color:var(--gris);font-size:14px}
+
+ /* CONTACTO */
+ #contacto{background:linear-gradient(135deg,var(--azul) 0%,var(--azul-osc) 100%);color:#fff}
+ #contacto h2{color:#fff}
+ #contacto .subtitulo{color:rgba(255,255,255,.85)}
+ .grid-cont{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+ .cont-info{display:grid;gap:18px}
+ .cont-info a,.cont-info div{display:flex;gap:12px;align-items:center;font-size:16px}
+ .cont-info .ico{font-size:22px}
+ form.cotiza{background:#fff;border-radius:var(--radio);padding:26px;display:grid;gap:14px}
+ form.cotiza label{font-size:13px;font-weight:700;color:var(--texto);display:grid;gap:6px}
+ form.cotiza input,form.cotiza textarea{padding:11px 14px;border:1px solid var(--borde);
+   border-radius:10px;font-size:15px;font-family:inherit;color:var(--texto)}
+ form.cotiza textarea{resize:vertical;min-height:90px}
+
+ /* FOOTER */
+ footer.pie{background:#0a1a33;color:#aeb8c9;padding:40px 0;font-size:14px}
+ .pie-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+ .pie .marca{color:#fff}
+
+ /* RESPONSIVE */
+ @media(max-width:980px){
+   .grid-serv{grid-template-columns:repeat(2,1fr)}
+   .grid-prod{grid-template-columns:repeat(3,1fr)}
+   #nosotros .grid-nos,.grid-cont{grid-template-columns:1fr}
+ }
+ @media(max-width:720px){
+   .menu{display:none}
+   .hamb{display:block}
+   .hero h1{font-size:34px}
+   .grid-prod{grid-template-columns:repeat(2,1fr)}
+   .seccion{padding:54px 0}
+ }
+ @media(max-width:480px){
+   .grid-serv,.grid-prod{grid-template-columns:1fr}
+   .panel-nos{grid-template-columns:1fr}
+ }
+</style>
+</head>
+<body>
+<!-- ====== CONTENIDO DEL SITIO ====== -->
+<!-- NAV -->
+<header class="nav">
+  <div class="contenedor nav-inner">
+    <a href="#inicio" class="marca"><span class="punto"></span>FRAMA <span style="color:var(--gris);font-weight:600">Industrial Supply</span></a>
+    <nav class="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contacto" class="btn btn-primario">Cotizar</a>
+      <button class="hamb" id="hamb" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="contenedor">
+    <h1>Tu proveedor industrial para maquiladoras y empresas</h1>
+    <p>Suministro confiable de MRO, empaques, adhesivos, equipo de protección personal y herramientas. Entrega rápida y atención personalizada.</p>
+    <div class="acciones">
+      <a href="#catalogo" class="btn btn-claro">Ver catálogo</a>
+      <a href="#contacto" class="btn btn-primario">Solicitar cotización</a>
+    </div>
+    <div class="stats">
+      <div><b>+1,500</b><span>productos disponibles</span></div>
+      <div><b>24 h</b><span>respuesta a cotizaciones</span></div>
+      <div><b>+10</b><span>años de experiencia</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="seccion" id="servicios">
+  <div class="contenedor">
+    <h2>Servicios</h2>
+    <p class="subtitulo">Soluciones de suministro industrial de principio a fin.</p>
+    <div class="grid-serv">
+      <div class="card-serv"><div class="ico">📦</div><h3>Suministro MRO</h3><p>Mantenimiento, reparación y operación con amplio inventario y reabasto programado.</p></div>
+      <div class="card-serv"><div class="ico">🛡️</div><h3>Equipo de protección</h3><p>EPP certificado para tu personal: guantes, lentes, calzado y más.</p></div>
+      <div class="card-serv"><div class="ico">🧰</div><h3>Herramientas</h3><p>Herramienta manual y eléctrica de marcas reconocidas para tu planta.</p></div>
+      <div class="card-serv"><div class="ico">📐</div><h3>Empaques y embalaje</h3><p>Material de empaque, esquineros, película y soluciones a medida.</p></div>
+      <div class="card-serv"><div class="ico">🧪</div><h3>Adhesivos y químicos</h3><p>Adhesivos industriales, selladores y químicos de limpieza y proceso.</p></div>
+      <div class="card-serv"><div class="ico">🚚</div><h3>Logística y entrega</h3><p>Entregas en tiempo a maquiladoras de la región con seguimiento.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOGO -->
+<section class="seccion" id="catalogo">
+  <div class="contenedor">
+    <h2>Catálogo</h2>
+    <p class="subtitulo">Explora nuestras líneas de producto. Filtra, busca y solicita cotización al instante.</p>
+    <div class="cat-controles">
+      <div class="buscador">
+        🔎 <input type="search" id="busqueda" placeholder="Buscar producto, SKU o categoría…" aria-label="Buscar">
+      </div>
+      <button class="btn btn-borde" id="btnCSV">⬇️ Exportar CSV</button>
+    </div>
+    <div class="filtros" id="filtros"></div>
+    <div class="grid-prod" id="gridProd"></div>
+    <div class="cat-acciones">
+      <a href="#contacto" class="btn btn-primario">¿No encuentras algo? Pídelo a la medida</a>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section class="seccion" id="nosotros">
+  <div class="contenedor">
+    <div class="grid-nos">
+      <div>
+        <h2>Nosotros</h2>
+        <p class="subtitulo">FRAMA Industrial Supply es un proveedor industrial enfocado en maquiladoras y empresas que necesitan abasto confiable y atención cercana.</p>
+        <ul>
+          <li>Inventario amplio y reabasto programado para tu operación.</li>
+          <li>Atención personalizada y cotizaciones en menos de 24 horas.</li>
+          <li>Marcas reconocidas y productos certificados.</li>
+          <li>Entrega puntual en la región.</li>
+        </ul>
+      </div>
+      <div class="panel-nos">
+        <div><b>+1,500</b><span>SKUs en catálogo</span></div>
+        <div><b>+10</b><span>años de experiencia</span></div>
+        <div><b>24 h</b><span>respuesta a cotizaciones</span></div>
+        <div><b>100%</b><span>enfoque industrial</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="seccion" id="contacto">
+  <div class="contenedor">
+    <h2>Contacto</h2>
+    <p class="subtitulo">Solicita tu cotización. Te respondemos por correo o WhatsApp.</p>
+    <div class="grid-cont">
+      <div class="cont-info">
+        <a href="mailto:ventas@framaindustrial.com"><span class="ico">✉️</span> ventas@framaindustrial.com</a>
+        <a href="https://wa.me/526641234567" target="_blank" rel="noopener"><span class="ico">💬</span> WhatsApp: +52 664 123 4567</a>
+        <div><span class="ico">📍</span> Tijuana, Baja California, México</div>
+        <div><span class="ico">🕗</span> Lun–Vie 8:00–18:00</div>
+      </div>
+      <form class="cotiza" id="formCotiza">
+        <label>Nombre / Empresa
+          <input type="text" name="nombre" required placeholder="Tu nombre o empresa">
+        </label>
+        <label>Correo
+          <input type="email" name="correo" required placeholder="correo@empresa.com">
+        </label>
+        <label>¿Qué necesitas?
+          <textarea name="mensaje" required placeholder="Describe los productos y cantidades…"></textarea>
+        </label>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button type="submit" class="btn btn-primario">Enviar por correo</button>
+          <button type="button" class="btn btn-borde" id="btnWA">Enviar por WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pie">
+  <div class="contenedor pie-inner">
+    <div class="marca"><span class="punto"></span>FRAMA Industrial Supply</div>
+    <div>© <span id="anio"></span> FRAMA Industrial Supply. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<!-- ====== SCRIPTS ====== -->
+<script>
+ // =================== DATA ===================
+ const CATEGORIES = [
+   { id:"mro",        name:"MRO" },
+   { id:"empaques",   name:"Empaques" },
+   { id:"adhesivos",  name:"Adhesivos" },
+   { id:"ppe",        name:"PPE" },
+   { id:"herramientas", name:"Herramientas" },
+   { id:"limpieza",   name:"Limpieza" }
+ ];
+
+ const PRODUCTS = [
+   { id:"p001", name:"Guantes de nitrilo (caja 100)", category:"ppe",        sku:"PPE-GN-100", unit:"caja",  description:"Guantes desechables de nitrilo, sin polvo, talla M." },
+   { id:"p002", name:"Lentes de seguridad claros",    category:"ppe",        sku:"PPE-LS-01",  unit:"pieza", description:"Lentes de protección con resistencia a impacto, antiempañante." },
+   { id:"p003", name:"Cinta adhesiva industrial 48mm", category:"adhesivos", sku:"ADH-CT-48",  unit:"rollo", description:"Cinta de empaque reforzada, alta adherencia, 48mm x 100m." },
+   { id:"p004", name:"Adhesivo de contacto 1L",       category:"adhesivos",  sku:"ADH-CC-1L",  unit:"lata",  description:"Adhesivo de contacto multiusos para procesos industriales." },
+   { id:"p005", name:"Película stretch 18\"",          category:"empaques",   sku:"EMP-ST-18",  unit:"rollo", description:"Película emplaye para tarima, calibre estándar." },
+   { id:"p006", name:"Caja de cartón 40x30x30",       category:"empaques",   sku:"EMP-CJ-403", unit:"pieza", description:"Caja corrugada doble pared para embalaje pesado." },
+   { id:"p007", name:"Juego de desarmadores 6 pzas",  category:"herramientas", sku:"HER-DS-06", unit:"juego", description:"Desarmadores de precisión, puntas planas y de cruz." },
+   { id:"p008", name:"Taladro inalámbrico 20V",       category:"herramientas", sku:"HER-TL-20", unit:"pieza", description:"Taladro percutor con batería de litio y cargador." },
+   { id:"p009", name:"Grasa multiusos 400g",          category:"mro",        sku:"MRO-GR-400", unit:"tubo",  description:"Grasa lubricante de litio para mantenimiento general." },
+   { id:"p010", name:"Banda transportadora repuesto", category:"mro",        sku:"MRO-BT-01",  unit:"metro", description:"Banda de repuesto para línea de producción, a medida." },
+   { id:"p011", name:"Desengrasante industrial 4L",   category:"limpieza",   sku:"LIM-DG-4L",  unit:"galón", description:"Desengrasante concentrado para piso y maquinaria." },
+   { id:"p012", name:"Toallas de limpieza (paca)",    category:"limpieza",   sku:"LIM-TL-PC",  unit:"paca",  description:"Toallas industriales absorbentes, presentación en paca." }
+ ];
+
+ // =================== CONFIG ===================
+ const EMAIL_VENTAS = "ventas@framaindustrial.com";
+ const WHATSAPP = "526641234567"; // formato internacional sin signos
+
+ // =================== HELPERS ===================
+ const $  = (sel, ctx=document) => ctx.querySelector(sel);
+ const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
+ const categoryName = (id) => (CATEGORIES.find(c => c.id === id) || {}).name || id;
+
+ // =================== ESTADO ===================
+ let filtroActivo = "all";
+ let textoBusqueda = "";
+
+ // =================== RENDER, FILTROS Y ACCIONES ===================
+ function productosFiltrados(){
+   const t = textoBusqueda.trim().toLowerCase();
+   return PRODUCTS.filter(p => {
+     const okCat = filtroActivo === "all" || p.category === filtroActivo;
+     const okTxt = !t || [p.name, p.sku, categoryName(p.category)]
+       .some(v => v.toLowerCase().includes(t));
+     return okCat && okTxt;
+   });
+ }
+
+ function renderFiltros(){
+   const cont = $("#filtros");
+   const chips = [{ id:"all", name:"Todos" }, ...CATEGORIES];
+   cont.innerHTML = chips.map(c =>
+     `<button class="chip ${c.id===filtroActivo?'activo':''}" data-cat="${c.id}">${c.name}</button>`
+   ).join("");
+   $$(".chip", cont).forEach(ch => ch.addEventListener("click", () => {
+     filtroActivo = ch.dataset.cat;
+     renderFiltros();
+     renderProductos();
+   }));
+ }
+
+ function tarjetaProducto(p){
+   const msg = mensajeProducto(p);
+   return `<article class="card-prod">
+     <span class="etiqueta">${categoryName(p.category)}</span>
+     <h3>${p.name}</h3>
+     <div class="sku">SKU: ${p.sku} · ${p.unit}</div>
+     <p>${p.description}</p>
+     <div class="pie">
+       <a class="btn btn-primario" href="mailto:${EMAIL_VENTAS}?subject=${encodeURIComponent('Cotización: '+p.name)}&body=${encodeURIComponent(msg)}">Cotizar</a>
+       <a class="btn btn-borde" target="_blank" rel="noopener" href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}">WhatsApp</a>
+     </div>
+   </article>`;
+ }
+
+ function mensajeProducto(p){
+   return `Hola, me interesa cotizar: ${p.name} (SKU: ${p.sku}). Unidad: ${p.unit}.`;
+ }
+
+ function renderProductos(){
+   const grid = $("#gridProd");
+   const lista = productosFiltrados();
+   if(lista.length === 0){
+     grid.innerHTML = `<div class="vacio">No se encontraron productos. Prueba con otra búsqueda o categoría.</div>`;
+     return;
+   }
+   grid.innerHTML = lista.map(tarjetaProducto).join("");
+ }
+
+ // ----- CSV -----
+ function escapeCSV(valor){
+   const s = String(valor ?? "");
+   return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s;
+ }
+
+ function generarCSV(lista = PRODUCTS){
+   const encabezados = ["id","name","category","sku","unit","description"];
+   const filas = lista.map(p => encabezados.map(k =>
+     escapeCSV(k === "category" ? categoryName(p.category) : p[k])
+   ).join(","));
+   return [encabezados.join(","), ...filas].join("\n");
+ }
+
+ function descargarCSV(){
+   const csv = generarCSV(productosFiltrados());
+   const blob = new Blob([csv], { type:"text/csv;charset=utf-8;" });
+   const url = URL.createObjectURL(blob);
+   const a = document.createElement("a");
+   a.href = url;
+   a.download = "catalogo-frama.csv";
+   document.body.appendChild(a);
+   a.click();
+   document.body.removeChild(a);
+   URL.revokeObjectURL(url);
+ }
+
+ // ----- Formulario de cotización -----
+ function mensajeFormulario(form){
+   const datos = new FormData(form);
+   const nombre = datos.get("nombre") || "";
+   const correo = datos.get("correo") || "";
+   const mensaje = datos.get("mensaje") || "";
+   return `Solicitud de cotización%0A`
+     .replace("%0A","\n") +
+     `Nombre/Empresa: ${nombre}\nCorreo: ${correo}\n\n${mensaje}`;
+ }
+
+ function initFormulario(){
+   const form = $("#formCotiza");
+   form.addEventListener("submit", (e) => {
+     e.preventDefault();
+     const cuerpo = mensajeFormulario(form);
+     window.location.href = `mailto:${EMAIL_VENTAS}?subject=${encodeURIComponent('Solicitud de cotización')}&body=${encodeURIComponent(cuerpo)}`;
+   });
+   $("#btnWA").addEventListener("click", () => {
+     if(!form.reportValidity()) return;
+     const cuerpo = mensajeFormulario(form);
+     window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(cuerpo)}`, "_blank", "noopener");
+   });
+ }
+
+ // ----- Misc UI -----
+ function initUI(){
+   $("#busqueda").addEventListener("input", (e) => {
+     textoBusqueda = e.target.value;
+     renderProductos();
+   });
+   $("#btnCSV").addEventListener("click", descargarCSV);
+   $("#hamb").addEventListener("click", () => {
+     const menu = $(".menu");
+     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+   });
+   $("#anio").textContent = new Date().getFullYear();
+ }
+
+ function init(){
+   renderFiltros();
+   renderProductos();
+   initFormulario();
+   initUI();
+ }
+
+ // =================== TESTS ===================
+ function runTests(){
+   const results = [];
+   const assert = (nombre, cond) => results.push({ nombre, ok: !!cond });
+
+   // Integridad de datos
+   assert("Hay categorías", CATEGORIES.length > 0);
+   assert("Hay productos", PRODUCTS.length > 0);
+   assert("IDs de producto únicos", new Set(PRODUCTS.map(p=>p.id)).size === PRODUCTS.length);
+   assert("SKUs únicos", new Set(PRODUCTS.map(p=>p.sku)).size === PRODUCTS.length);
+   assert("Cada producto tiene categoría válida",
+     PRODUCTS.every(p => CATEGORIES.some(c => c.id === p.category)));
+   assert("Cada producto tiene nombre, sku, unidad y descripción",
+     PRODUCTS.every(p => p.name && p.sku && p.unit && p.description));
+
+   // Filtros / búsqueda
+   const guarda = [filtroActivo, textoBusqueda];
+   filtroActivo = "all"; textoBusqueda = "";
+   assert("Filtro 'all' devuelve todos", productosFiltrados().length === PRODUCTS.length);
+   filtroActivo = "ppe";
+   assert("Filtro por categoría funciona",
+     productosFiltrados().every(p => p.category === "ppe"));
+   filtroActivo = "all"; textoBusqueda = PRODUCTS[0].sku;
+   assert("Búsqueda por SKU funciona", productosFiltrados().some(p => p.id === PRODUCTS[0].id));
+   [filtroActivo, textoBusqueda] = guarda;
+
+   // CSV
+   const csv = generarCSV();
+   assert("CSV tiene encabezado + filas", csv.split("\n").length === PRODUCTS.length + 1);
+   assert("CSV escapa comillas/comas", escapeCSV('a,"b"') === '"a,""b"""');
+
+   // URLs
+   assert("WhatsApp en formato internacional", /^\d{10,15}$/.test(WHATSAPP));
+   assert("Email de ventas válido", /.+@.+\..+/.test(EMAIL_VENTAS));
+
+   const fallidos = results.filter(r => !r.ok);
+   if(fallidos.length){
+     console.error(`❌ ${fallidos.length} prueba(s) fallida(s):`, fallidos.map(r=>r.nombre));
+   } else {
+     console.log(`✅ ${results.length} pruebas del catálogo pasaron correctamente.`);
+   }
+   return fallidos.length === 0;
+ }
+
+ // =================== ARRANQUE ===================
+ document.addEventListener("DOMContentLoaded", () => {
+   init();
+   runTests();
+ });
+</script>
+</body>
+</html>
