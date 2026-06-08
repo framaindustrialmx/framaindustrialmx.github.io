@@ -6,14 +6,14 @@
 <title>FRAMA Industrial Supply | Ferretería y suministro industrial en Tecate, B.C.</title>
 
 <!-- ====== SEO ====== -->
-<meta name="description" content="FRAMA Industrial Supply, S.A. de C.V. — Ferretería y proveedor industrial en Tecate, B.C. Herramientas, material eléctrico, tornillería, acero, tubería, EPP, herramienta neumática y MRO. Soluciones y servicios a sus necesidades industriales.">
-<meta name="keywords" content="ferretería industrial, proveedor industrial, herramientas, material eléctrico, tornillería, acero, tubería, equipo de protección personal, EPP, herramienta neumática, MRO, Tecate, Baja California, FRAMA Industrial Supply">
+<meta name="description" content="FRAMA Industrial Supply, S.A. de C.V. — Ferretería y proveedor industrial en Tecate, B.C. Material eléctrico, herramientas, baleros, tornillería, EPP, pintura, abrasivos y MRO. Las mejores marcas: 3M, FAG, Makita, Truper, Urrea, Siemens. Soluciones industriales inteligentes.">
+<meta name="keywords" content="ferretería industrial, proveedor industrial, material eléctrico, herramientas, baleros, chumaceras, bandas, tornillería, equipo de protección personal, EPP, pintura, abrasivos, MRO, Tecate, Baja California, FRAMA Industrial Supply, 3M, FAG, Makita, Truper, Urrea, Siemens">
 <meta name="author" content="FRAMA Industrial Supply, S.A. de C.V.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://framaindustrialmx.github.io/">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="FRAMA Industrial Supply | Ferretería industrial en Tecate">
-<meta property="og:description" content="Herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO. Soluciones y servicios a sus necesidades industriales.">
+<meta property="og:description" content="Soluciones industriales inteligentes que impulsan tu productividad. Material eléctrico, herramientas, baleros, tornillería, EPP, pintura y MRO.">
 <meta property="og:image" content="https://framaindustrialmx.github.io/assets/img/frama-logo.png">
 <meta property="og:url" content="https://framaindustrialmx.github.io/">
 <meta property="og:locale" content="es_MX">
@@ -28,553 +28,485 @@
 <!-- Datos estructurados -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "HardwareStore",
-  "name": "FRAMA Industrial Supply, S.A. de C.V.",
-  "description": "Ferretería industrial y proveedor de suministros para la industria: herramientas, material eléctrico, tornillería, acero, tubería, equipo de protección personal y MRO.",
-  "image": "https://framaindustrialmx.github.io/assets/img/frama-logo.png",
-  "url": "https://framaindustrialmx.github.io/",
-  "telephone": "+52-665-654-5282",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Puebla 91-2, Col. Emiliano Zapata",
-    "addressLocality": "Tecate",
-    "addressRegion": "Baja California",
-    "postalCode": "21460",
-    "addressCountry": "MX"
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "08:00",
-    "closes": "17:00"
-  }]
+  "@context":"https://schema.org","@type":"HardwareStore",
+  "name":"FRAMA Industrial Supply, S.A. de C.V.",
+  "description":"Ferretería industrial y proveedor de suministros para la industria: material eléctrico, herramientas, baleros, tornillería, EPP, pintura, abrasivos y MRO.",
+  "image":"https://framaindustrialmx.github.io/assets/img/frama-logo.png",
+  "url":"https://framaindustrialmx.github.io/",
+  "telephone":"+52-665-654-5282",
+  "address":{"@type":"PostalAddress","streetAddress":"Puebla 91-2, Col. Emiliano Zapata","addressLocality":"Tecate","addressRegion":"Baja California","postalCode":"21460","addressCountry":"MX"},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"}]
 }
 </script>
 
 <style>
  /* ============ TOKENS ============ */
  :root{
-   --navy:#0d2a5c;        /* azul marino profundo */
-   --navy2:#143c83;
-   --navy3:#0a2049;
-   --azul:#1b6fe0;        /* azul vivo */
-   --rojo:#e2231a;        /* rojo FRAMA (CTA) */
-   --rojo-osc:#c01910;
-   --amarillo:#ffd400;    /* amarillo FRAMA */
-   --gris:#5d6b7e;
-   --gris-claro:#f4f6fb;
-   --borde:#e6ebf3;
-   --texto:#16202e;
-   --radio:16px;
-   --sombra:0 18px 50px rgba(13,42,92,.13);
-   --sombra-sm:0 8px 22px rgba(13,42,92,.10);
-   --ancho:1200px;
+   --blue:#1b4ea2; --blue-mid:#143c83; --blue-deep:#0b2452; --blue-ink:#081a3d;
+   --sky:#2f7fe6;
+   --yellow:#ffd400; --yellow-deep:#f2bf00;
+   --red:#e2231a; --red-deep:#bf1810;
+   --ink:#0f1a2b; --gris:#5b6878; --muted:#8794a6;
+   --line:#e7ecf4; --bg:#f5f7fb; --white:#fff;
+   --r:16px; --r-sm:11px;
+   --sh:0 22px 60px rgba(11,36,82,.14); --sh-sm:0 10px 28px rgba(11,36,82,.10);
+   --w:1220px;
  }
  *{box-sizing:border-box}
  html{scroll-behavior:smooth}
- body{margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,sans-serif;color:var(--texto);
-   background:#fff;line-height:1.6;overflow-x:hidden}
+ body{margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,sans-serif;color:var(--ink);
+   background:var(--white);line-height:1.62;overflow-x:hidden;-webkit-font-smoothing:antialiased}
  a{color:inherit;text-decoration:none}
  img{max-width:100%;display:block}
- h1,h2,h3,.font-d{font-family:'Poppins',sans-serif}
- .contenedor{max-width:var(--ancho);margin:0 auto;padding:0 22px}
- .seccion{padding:96px 0}
+ h1,h2,h3,.fd{font-family:'Poppins',sans-serif}
+ .wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+ .sec{padding:104px 0}
+ ::selection{background:var(--yellow);color:var(--blue-ink)}
+ :focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:6px}
 
  /* botones */
- .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:10px;border:0;
-   cursor:pointer;font-weight:700;font-size:15px;font-family:'Poppins',sans-serif;transition:.2s;white-space:nowrap}
- .btn-rojo{background:var(--rojo);color:#fff;box-shadow:0 10px 24px rgba(226,35,26,.32)}
- .btn-rojo:hover{background:var(--rojo-osc);transform:translateY(-2px)}
- .btn-amarillo{background:var(--amarillo);color:var(--navy)}
- .btn-amarillo:hover{filter:brightness(1.05);transform:translateY(-2px)}
- .btn-navy{background:var(--navy);color:#fff}
- .btn-navy:hover{background:var(--navy2);transform:translateY(-2px)}
- .btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.5);backdrop-filter:blur(4px)}
- .btn-ghost:hover{background:#fff;color:var(--navy);border-color:#fff}
- .btn-wa{background:#25d366;color:#fff}
+ .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:11px;border:0;cursor:pointer;
+   font-weight:700;font-size:15px;font-family:'Poppins',sans-serif;transition:transform .2s,box-shadow .2s,background .2s,color .2s;white-space:nowrap}
+ .btn:active{transform:translateY(0)!important}
+ .btn-yellow{background:var(--yellow);color:var(--blue-ink);box-shadow:0 12px 26px rgba(255,212,0,.4)}
+ .btn-yellow:hover{background:var(--yellow-deep);transform:translateY(-2px)}
+ .btn-red{background:var(--red);color:#fff;box-shadow:0 12px 26px rgba(226,35,26,.32)}
+ .btn-red:hover{background:var(--red-deep);transform:translateY(-2px)}
+ .btn-blue{background:var(--blue);color:#fff}
+ .btn-blue:hover{background:var(--blue-mid);transform:translateY(-2px)}
+ .btn-wa{background:#25d366;color:#fff;box-shadow:0 12px 26px rgba(37,211,102,.3)}
  .btn-wa:hover{filter:brightness(1.06);transform:translateY(-2px)}
- .btn-borde{background:#fff;color:var(--navy);border:1.5px solid var(--borde)}
- .btn-borde:hover{border-color:var(--azul);color:var(--azul)}
+ .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
+ .btn-ghost:hover{background:#fff;color:var(--blue);border-color:#fff}
+ .btn-borde{background:#fff;color:var(--blue);border:1.5px solid var(--line)}
+ .btn-borde:hover{border-color:var(--sky);color:var(--sky)}
 
- /* encabezados de sección */
- .overline{display:inline-block;font-family:'Poppins';font-weight:700;font-size:12.5px;letter-spacing:3px;
-   text-transform:uppercase;color:var(--rojo);margin-bottom:12px}
- .titulo{font-size:40px;font-weight:800;line-height:1.1;letter-spacing:-1px;color:var(--navy);margin:0}
- .titulo .ac{color:var(--azul)}
- .centro{text-align:center}
- .centro .subt{max-width:680px;margin-left:auto;margin-right:auto}
- .subt{color:var(--gris);font-size:17.5px;margin:14px 0 0}
- .head-mb{margin-bottom:54px}
+ /* encabezados */
+ .eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins';font-weight:700;font-size:12.5px;
+   letter-spacing:2.5px;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+ .eyebrow::before{content:"";width:26px;height:3px;background:var(--yellow);border-radius:3px}
+ .h-title{font-size:43px;font-weight:800;line-height:1.08;letter-spacing:-1.2px;color:var(--blue-ink);margin:0}
+ .h-title .ac{color:var(--blue)}
+ .h-sub{color:var(--gris);font-size:18px;margin:16px 0 0;max-width:680px}
+ .center{text-align:center}.center .h-sub{margin-left:auto;margin-right:auto}.center .eyebrow::before{display:none}
+ .head{margin-bottom:58px}
 
- /* placeholder de imagen (fallback de marca) */
- .ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--navy) 0%,var(--azul) 100%)}
- .ph::before{content:"";position:absolute;inset:0;background:
-   radial-gradient(circle at 80% 15%,rgba(255,212,0,.28),transparent 45%),
-   radial-gradient(circle at 15% 90%,rgba(226,35,26,.30),transparent 45%)}
- .ph img{position:relative;width:100%;height:100%;object-fit:cover;z-index:1}
- .ph img.fail{display:none}
+ /* placeholder imagen */
+ .ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--blue-deep),var(--blue) 70%);isolation:isolate}
+ .ph::before{content:"";position:absolute;inset:0;z-index:0;background:
+   radial-gradient(circle at 82% 12%,rgba(255,212,0,.32),transparent 46%),
+   radial-gradient(circle at 12% 92%,rgba(226,35,26,.30),transparent 46%)}
+ .ph img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+ .ph img.fail{opacity:0}
 
- /* reveal on scroll */
- .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
- .reveal.in{opacity:1;transform:none}
+ /* reveal */
+ .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+ .rv.in{opacity:1;transform:none}
+ @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 
  /* ============ TOPBAR ============ */
- .topbar{background:var(--navy3);color:#cdd8ee;font-size:13.5px}
- .topbar-inner{display:flex;justify-content:space-between;align-items:center;min-height:42px;gap:18px;flex-wrap:wrap;padding:6px 0}
+ .topbar{background:var(--blue-ink);color:#c4d1ea;font-size:13.5px}
+ .topbar .in{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;min-height:44px;padding:6px 0}
  .topbar a,.topbar span{display:inline-flex;align-items:center;gap:7px}
- .topbar .izq{display:flex;gap:22px;flex-wrap:wrap}
- .topbar a:hover{color:#fff}
+ .topbar .l{display:flex;gap:22px;flex-wrap:wrap}.topbar a:hover{color:#fff}
+ .topbar .tag{color:var(--yellow);font-weight:600}
 
  /* ============ NAV ============ */
- header.nav{position:sticky;top:0;z-index:70;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);
-   border-bottom:1px solid var(--borde);transition:box-shadow .2s}
- header.nav.scrolled{box-shadow:0 6px 26px rgba(13,42,92,.10)}
- .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;height:84px}
- .menu{display:flex;gap:30px;align-items:center}
- .menu a{font-family:'Poppins';font-weight:600;color:var(--navy);font-size:15px;position:relative}
- .menu a::after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:3px;background:var(--rojo);
-   border-radius:3px;transition:width .25s}
- .menu a:hover::after{width:100%}
- .menu a:hover{color:var(--rojo)}
+ header.nav{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);
+   border-bottom:1px solid var(--line);transition:box-shadow .25s}
+ header.nav.sc{box-shadow:0 8px 30px rgba(11,36,82,.10)}
+ .nav .in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:86px}
+ .menu{display:flex;gap:32px;align-items:center}
+ .menu a{font-family:'Poppins';font-weight:600;color:var(--blue-ink);font-size:15px;position:relative;padding:4px 0}
+ .menu a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:3px;background:var(--red);border-radius:3px;transition:width .25s}
+ .menu a:hover::after{width:100%}.menu a:hover{color:var(--red)}
  .nav-cta{display:flex;gap:12px;align-items:center}
- .hamb{display:none;background:none;border:0;font-size:30px;cursor:pointer;color:var(--navy);line-height:1}
+ .hamb{display:none;background:none;border:0;font-size:30px;cursor:pointer;color:var(--blue-ink);line-height:1}
 
- /* LOGO orgánico (SVG + texto) */
+ /* LOGO orgánico */
  .brand{display:flex;align-items:center;gap:13px}
- .brand-ico{width:46px;height:46px;flex:none}
+ .brand-ico{width:48px;height:48px;flex:none;filter:drop-shadow(0 4px 8px rgba(11,36,82,.18))}
  .brand-tx{display:flex;align-items:center;gap:11px;line-height:1}
- .brand-name{font-family:'Poppins';font-weight:900;font-style:italic;font-size:30px;letter-spacing:-1px;color:var(--navy)}
- .brand-name span{color:var(--rojo)}
- .brand-sub{display:flex;flex-direction:column;border-left:3px solid var(--rojo);padding-left:11px;
-   font-family:'Poppins';font-weight:700;font-size:11px;letter-spacing:2.5px;color:var(--navy);text-transform:uppercase}
- .brand-sub small{font-weight:600;font-size:9px;letter-spacing:1.5px;color:var(--gris)}
- .nav .brand-name{font-size:26px}
+ .brand-name{font-family:'Poppins';font-weight:900;font-style:italic;font-size:28px;letter-spacing:-1px;color:var(--blue-ink)}
+ .brand-name span{color:var(--red)}
+ .brand-sub{display:flex;flex-direction:column;border-left:3px solid var(--yellow);padding-left:11px;
+   font-family:'Poppins';font-weight:700;font-size:11px;letter-spacing:2.5px;color:var(--blue-ink);text-transform:uppercase}
+ .brand-sub small{font-weight:600;font-size:8.5px;letter-spacing:1.5px;color:var(--muted)}
 
  /* ============ HERO ============ */
- .hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+ .hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
  .hero .bg{position:absolute;inset:0;z-index:0}
- .hero .bg::after{content:"";position:absolute;inset:0;
-   background:linear-gradient(110deg,rgba(10,32,73,.96) 0%,rgba(13,42,92,.86) 45%,rgba(13,42,92,.55) 100%)}
  .hero .bg img{width:100%;height:100%;object-fit:cover}
- .hero-inner{position:relative;z-index:2;padding:90px 0}
- .hero .pill{display:inline-flex;align-items:center;gap:9px;background:rgba(255,212,0,.16);
-   border:1px solid rgba(255,212,0,.5);color:var(--amarillo);font-family:'Poppins';font-weight:700;
-   font-size:12.5px;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:22px}
- .hero h1{font-size:60px;line-height:1.04;letter-spacing:-1.5px;font-weight:900;margin:0 0 18px;max-width:900px}
- .hero h1 b{color:var(--amarillo)}
- .hero p{font-size:20px;max-width:600px;opacity:.94;margin:0 0 32px}
- .hero .acciones{display:flex;gap:14px;flex-wrap:wrap}
- .hero .mini{margin-top:46px;display:flex;gap:14px;flex-wrap:wrap;font-size:14px;opacity:.9}
+ .hero .bg::after{content:"";position:absolute;inset:0;background:
+   linear-gradient(108deg,rgba(8,26,61,.97) 0%,rgba(11,36,82,.9) 42%,rgba(11,36,82,.5) 100%)}
+ .hero .glow{position:absolute;right:-160px;top:-120px;width:520px;height:520px;z-index:1;border-radius:50%;
+   background:radial-gradient(circle,rgba(255,212,0,.22),transparent 65%)}
+ .hero .in{position:relative;z-index:2;padding:96px 0}
+ .pill{display:inline-flex;align-items:center;gap:9px;background:rgba(255,212,0,.14);border:1px solid rgba(255,212,0,.5);
+   color:var(--yellow);font-family:'Poppins';font-weight:700;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;
+   padding:9px 17px;border-radius:999px;margin-bottom:24px}
+ .hero h1{font-size:62px;line-height:1.03;letter-spacing:-2px;font-weight:900;margin:0 0 20px;max-width:940px}
+ .hero h1 b{color:var(--yellow)}
+ .hero p{font-size:20.5px;max-width:620px;opacity:.95;margin:0 0 34px}
+ .hero .acc{display:flex;gap:14px;flex-wrap:wrap}
+ .hero .mini{margin-top:48px;display:flex;gap:12px;flex-wrap:wrap;font-size:14px}
  .hero .mini span{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);
-   border:1px solid rgba(255,255,255,.16);padding:8px 14px;border-radius:999px}
+   border:1px solid rgba(255,255,255,.16);padding:9px 15px;border-radius:999px}
 
- /* barra de stats sobre el hero */
- .statbar{position:relative;z-index:3;margin-top:-48px}
- .statbar-grid{background:#fff;border-radius:18px;box-shadow:var(--sombra);display:grid;
-   grid-template-columns:repeat(4,1fr);overflow:hidden}
- .statbar-grid .it{padding:26px 22px;text-align:center;border-right:1px solid var(--borde)}
- .statbar-grid .it:last-child{border-right:0}
- .statbar-grid b{display:block;font-family:'Poppins';font-weight:900;font-size:34px;color:var(--navy);line-height:1}
- .statbar-grid span{font-size:13.5px;color:var(--gris);margin-top:6px;display:block}
+ /* MARQUEE marcas */
+ .marcas-strip{background:var(--blue-ink);color:#fff;padding:22px 0;position:relative;z-index:3}
+ .marcas-strip .lbl{text-align:center;font-family:'Poppins';font-size:12px;letter-spacing:3px;text-transform:uppercase;
+   color:var(--yellow);margin-bottom:14px;font-weight:700}
+ .marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+   mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+ .mq-track{display:flex;gap:54px;width:max-content;animation:mq 26s linear infinite}
+ .mq-track span{font-family:'Poppins';font-weight:800;font-size:24px;color:#fff;opacity:.7;letter-spacing:.5px;white-space:nowrap}
+ .marquee:hover .mq-track{animation-play-state:paused}
+ @keyframes mq{to{transform:translateX(-50%)}}
+ @media(prefers-reduced-motion:reduce){.mq-track{animation:none;flex-wrap:wrap;justify-content:center}}
 
- /* ============ CATEGORIAS ============ */
+ /* STATBAR */
+ .statbar{margin-top:-54px;position:relative;z-index:5}
+ .statbar .grid{background:#fff;border-radius:20px;box-shadow:var(--sh);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}
+ .statbar .it{padding:30px 22px;text-align:center;border-right:1px solid var(--line)}
+ .statbar .it:last-child{border-right:0}
+ .statbar b{display:block;font-family:'Poppins';font-weight:900;font-size:38px;color:var(--blue);line-height:1}
+ .statbar span{font-size:13.5px;color:var(--gris);margin-top:8px;display:block}
+
+ /* CATEGORIAS */
  #categorias{background:#fff}
- .grid-cat{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
- .cat-card{position:relative;border-radius:var(--radio);overflow:hidden;cursor:pointer;height:180px;
-   box-shadow:var(--sombra-sm);transition:.25s}
- .cat-card:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+ .grid-cat{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+ .cat-card{position:relative;border-radius:var(--r);overflow:hidden;cursor:pointer;height:200px;box-shadow:var(--sh-sm);transition:.28s}
+ .cat-card:hover{transform:translateY(-7px);box-shadow:var(--sh)}
  .cat-card .ph{position:absolute;inset:0}
- .cat-card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,42,92,.15),rgba(13,42,92,.85))}
- .cat-card .cont{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:18px;color:#fff;display:flex;align-items:center;gap:10px}
- .cat-card .cont .ico{font-size:24px}
- .cat-card .cont span{font-family:'Poppins';font-weight:700;font-size:16px}
- .cat-card .flecha{position:absolute;top:14px;right:14px;z-index:2;width:34px;height:34px;border-radius:50%;
-   background:var(--rojo);color:#fff;display:grid;place-items:center;opacity:0;transform:translateY(-6px);transition:.25s}
- .cat-card:hover .flecha{opacity:1;transform:none}
+ .cat-card .ph::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(8,26,61,.05),rgba(8,26,61,.9))}
+ .cat-card:hover .ph img{transform:scale(1.08)}
+ .cat-card .ct{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:20px;color:#fff}
+ .cat-card .ct .ico{font-size:26px;margin-bottom:4px;display:block}
+ .cat-card .ct span.nm{font-family:'Poppins';font-weight:700;font-size:17px;display:block}
+ .cat-card .ct small{opacity:.85;font-size:12.5px;display:inline-flex;align-items:center;gap:6px;margin-top:4px}
+ .cat-card .bar{position:absolute;left:0;bottom:0;height:4px;width:0;background:var(--yellow);z-index:4;transition:width .3s}
+ .cat-card:hover .bar{width:100%}
 
- /* ============ DESTACADOS ============ */
- #destacados{background:var(--gris-claro)}
- .grid-dest{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
- .dest-card{background:#fff;border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra-sm);
-   transition:.25s;display:flex;flex-direction:column}
- .dest-card:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
- .dest-card .foto{position:relative;height:210px}
- .dest-card .foto .ph{position:absolute;inset:0}
- .dest-card .badge{position:absolute;top:14px;left:14px;z-index:3;background:var(--rojo);color:#fff;
-   font-family:'Poppins';font-weight:700;font-size:11px;letter-spacing:1px;padding:6px 12px;border-radius:8px;text-transform:uppercase}
- .dest-card .body{padding:22px;display:flex;flex-direction:column;gap:8px;flex:1}
- .dest-card .et{font-family:'Poppins';font-size:12px;font-weight:700;color:var(--azul);text-transform:uppercase;letter-spacing:1px}
- .dest-card h3{margin:0;font-size:20px;color:var(--navy)}
- .dest-card p{margin:0;color:var(--gris);font-size:14.5px;flex:1}
- .dest-card .btn{margin-top:6px;align-self:flex-start}
+ /* MISION (banda) */
+ #mision{background:var(--bg)}
+ #mision .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+ #mision .foto-w{position:relative;height:470px}
+ #mision .foto{position:absolute;inset:0;border-radius:22px;overflow:hidden;box-shadow:var(--sh)}
+ #mision .stamp{position:absolute;left:-18px;bottom:-20px;z-index:4;background:var(--yellow);color:var(--blue-ink);
+   border-radius:18px;padding:20px 24px;box-shadow:var(--sh);font-family:'Poppins'}
+ #mision .stamp b{display:block;font-size:34px;font-weight:900;line-height:1}
+ #mision .stamp span{font-size:13px;font-weight:600}
+ .mv{display:grid;gap:16px;margin-top:24px}
+ .mv .card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);border-radius:14px;padding:20px 22px}
+ .mv .card h4{margin:0 0 6px;font-family:'Poppins';font-size:16px;color:var(--blue-ink);display:flex;align-items:center;gap:9px}
+ .mv .card p{margin:0;color:var(--gris);font-size:15px}
 
- /* ============ BANDA STATS ============ */
- .bigstats{position:relative;color:#fff;overflow:hidden}
- .bigstats .bg{position:absolute;inset:0;z-index:0}
- .bigstats .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,32,73,.97),rgba(20,60,131,.92))}
- .bigstats .bg img{width:100%;height:100%;object-fit:cover}
- .bigstats .inner{position:relative;z-index:2;padding:84px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
- .bigstats b{display:block;font-family:'Poppins';font-weight:900;font-size:52px;line-height:1;color:#fff}
- .bigstats b .y{color:var(--amarillo)}
- .bigstats span{display:block;margin-top:10px;font-size:15px;opacity:.85}
+ /* VALORES (3 props) */
+ #valores{background:#fff}
+ .grid-val{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+ .val{text-align:center;padding:38px 28px;border-radius:var(--r);background:var(--bg);transition:.25s;border:1px solid transparent}
+ .val:hover{background:#fff;border-color:var(--line);box-shadow:var(--sh);transform:translateY(-6px)}
+ .val .ico{width:72px;height:72px;margin:0 auto 18px;border-radius:20px;display:grid;place-items:center;font-size:32px;
+   background:linear-gradient(135deg,var(--blue-deep),var(--sky));color:#fff;box-shadow:0 12px 24px rgba(27,78,162,.28)}
+ .val h3{margin:0 0 8px;font-size:19px;color:var(--blue-ink)}
+ .val p{margin:0;color:var(--gris);font-size:15px}
 
- /* ============ CATALOGO ============ */
+ /* DESTACADOS */
+ #destacados{background:var(--bg)}
+ .grid-dest{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+ .dest{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-sm);transition:.26s;display:flex;flex-direction:column}
+ .dest:hover{transform:translateY(-7px);box-shadow:var(--sh)}
+ .dest .foto{position:relative;height:220px}.dest .foto .ph{position:absolute;inset:0}
+ .dest:hover .foto .ph img{transform:scale(1.07)}
+ .dest .badge{position:absolute;top:16px;left:16px;z-index:4;background:var(--red);color:#fff;font-family:'Poppins';
+   font-weight:700;font-size:11px;letter-spacing:1px;padding:6px 13px;border-radius:8px;text-transform:uppercase;box-shadow:var(--sh-sm)}
+ .dest .body{padding:24px;display:flex;flex-direction:column;gap:9px;flex:1}
+ .dest .et{font-family:'Poppins';font-size:11.5px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:1px}
+ .dest h3{margin:0;font-size:20px;color:var(--blue-ink)}
+ .dest p{margin:0;color:var(--gris);font-size:14.5px;flex:1}.dest .btn{margin-top:6px;align-self:flex-start}
+
+ /* CATALOGO */
  #catalogo{background:#fff}
- .cat-controles{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
- .buscador{flex:1;min-width:240px;display:flex;align-items:center;gap:10px;background:var(--gris-claro);
-   border:1px solid var(--borde);border-radius:12px;padding:13px 18px}
- .buscador input{border:0;outline:0;flex:1;font-size:15px;font-family:inherit;background:transparent}
- .filtros{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:28px}
- .chip{padding:9px 18px;border-radius:999px;border:1px solid var(--borde);background:#fff;cursor:pointer;
+ .ctrl{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:20px}
+ .busc{flex:1;min-width:250px;display:flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+ .busc input{border:0;outline:0;flex:1;font-size:15px;font-family:inherit;background:transparent}
+ .filtros{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:30px}
+ .chip{padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;
    font-family:'Poppins';font-weight:600;font-size:13.5px;color:var(--gris);transition:.18s}
- .chip:hover{border-color:var(--azul);color:var(--azul)}
- .chip.activo{background:var(--navy);border-color:var(--navy);color:#fff}
- .grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
- .card-prod{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);overflow:hidden;
-   display:flex;flex-direction:column;transition:.22s}
- .card-prod:hover{box-shadow:var(--sombra);transform:translateY(-4px);border-color:transparent}
- .card-prod .foto{position:relative;height:150px}
- .card-prod .foto .ph{position:absolute;inset:0}
- .card-prod .body{padding:16px;display:flex;flex-direction:column;gap:7px;flex:1}
- .card-prod .et{align-self:flex-start;background:#fff3cd;color:#7a5d00;font-family:'Poppins';font-size:11px;
-   font-weight:700;padding:3px 10px;border-radius:6px}
- .card-prod h3{margin:2px 0 0;font-size:15.5px;color:var(--navy);font-family:'Poppins';font-weight:600}
- .card-prod .sku{font-size:12px;color:var(--gris)}
- .card-prod p{margin:0;color:var(--gris);font-size:13.5px;flex:1}
- .card-prod .pie{display:flex;gap:8px;margin-top:6px}
- .card-prod .pie .btn{padding:9px 14px;font-size:13px;flex:1;justify-content:center}
- .vacio{padding:50px;text-align:center;color:var(--gris);grid-column:1/-1}
- .cat-acciones{margin-top:34px;display:flex;justify-content:center}
+ .chip:hover{border-color:var(--sky);color:var(--sky)}
+ .chip.on{background:var(--blue-ink);border-color:var(--blue-ink);color:#fff}
+ .grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+ .prod{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.22s}
+ .prod:hover{box-shadow:var(--sh);transform:translateY(-5px);border-color:transparent}
+ .prod .foto{position:relative;height:160px}.prod .foto .ph{position:absolute;inset:0}
+ .prod:hover .foto .ph img{transform:scale(1.07)}
+ .prod .body{padding:17px;display:flex;flex-direction:column;gap:7px;flex:1}
+ .prod .et{align-self:flex-start;background:#fff3c4;color:#7a5d00;font-family:'Poppins';font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px}
+ .prod h3{margin:2px 0 0;font-size:15.5px;color:var(--blue-ink);font-family:'Poppins';font-weight:600;line-height:1.3}
+ .prod .sku{font-size:12px;color:var(--muted)}
+ .prod p{margin:0;color:var(--gris);font-size:13.5px;flex:1}
+ .prod .pie{display:flex;gap:8px;margin-top:8px}.prod .pie .btn{padding:10px 12px;font-size:13px;flex:1;justify-content:center}
+ .vacio{padding:54px;text-align:center;color:var(--gris);grid-column:1/-1}
+ .cat-acc{margin-top:38px;display:flex;justify-content:center}
 
- /* ============ POR QUE ============ */
- #porque{background:var(--gris-claro)}
- .grid-serv{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
- .card-serv{background:#fff;border-radius:var(--radio);padding:30px 24px;box-shadow:var(--sombra-sm);transition:.22s;text-align:center}
- .card-serv:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
- .card-serv .ico{width:64px;height:64px;margin:0 auto 16px;border-radius:16px;display:grid;place-items:center;
-   font-size:28px;background:linear-gradient(135deg,var(--navy),var(--azul));color:#fff}
- .card-serv h3{margin:0 0 8px;font-size:18px;color:var(--navy)}
- .card-serv p{margin:0;color:var(--gris);font-size:14.5px}
+ /* CTA banda */
+ .ctaband{position:relative;color:#fff;overflow:hidden}
+ .ctaband .bg{position:absolute;inset:0;z-index:0}.ctaband .bg img{width:100%;height:100%;object-fit:cover}
+ .ctaband .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,26,61,.96),rgba(27,78,162,.86))}
+ .ctaband .in{position:relative;z-index:2;padding:80px 0;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+ .ctaband h2{font-size:34px;font-weight:800;letter-spacing:-1px;margin:0 0 10px;max-width:680px}
+ .ctaband p{margin:0;opacity:.92;font-size:18px;max-width:620px}
 
- /* ============ SOBRE ============ */
- #sobre .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
- #sobre .foto{border-radius:20px;overflow:hidden;height:440px;box-shadow:var(--sombra)}
- #sobre .foto .ph{position:absolute;inset:0}
- #sobre .foto-wrap{position:relative;height:440px}
- #sobre .foto-wrap .tag{position:absolute;bottom:-22px;right:-10px;z-index:3;background:var(--rojo);color:#fff;
-   border-radius:16px;padding:20px 26px;box-shadow:var(--sombra);font-family:'Poppins'}
- #sobre .foto-wrap .tag b{display:block;font-size:30px;font-weight:900;line-height:1}
- #sobre .foto-wrap .tag span{font-size:13px;opacity:.9}
- #sobre ul{padding:0;margin:20px 0 26px;list-style:none;display:grid;gap:12px}
- #sobre li{display:flex;gap:11px;align-items:flex-start;font-size:16px}
- #sobre li::before{content:"✓";color:#fff;background:var(--rojo);width:22px;height:22px;border-radius:50%;
-   display:grid;place-items:center;font-size:13px;font-weight:800;flex:none;margin-top:2px}
+ /* CALIDAD / precios */
+ #calidad{background:var(--blue-ink);color:#fff;position:relative;overflow:hidden}
+ #calidad::after{content:"";position:absolute;right:-140px;top:-120px;width:460px;height:460px;border-radius:50%;
+   background:radial-gradient(circle,rgba(255,212,0,.16),transparent 65%)}
+ #calidad .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:54px;align-items:center;position:relative;z-index:2}
+ #calidad .h-title{color:#fff}#calidad .h-sub{color:#cdd9ee}
+ #calidad .eyebrow{color:var(--yellow)}
+ .precio-card{background:#fff;border-radius:22px;padding:30px;box-shadow:var(--sh)}
+ .precio-card .top{display:inline-block;background:var(--red);color:#fff;font-family:'Poppins';font-weight:800;font-size:12px;
+   letter-spacing:1.5px;text-transform:uppercase;padding:7px 16px;border-radius:8px;margin-bottom:20px}
+ .precio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+ .precio-grid div{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px 10px;text-align:center;
+   font-family:'Poppins';font-weight:800;color:var(--blue-ink);font-size:16px;transition:.2s}
+ .precio-grid div:hover{color:var(--red);transform:translateY(-3px);box-shadow:var(--sh-sm)}
 
- /* ============ MARCAS ============ */
- #marcas{background:#fff;text-align:center}
- .tira-marcas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:10px}
- .marca-chip{background:var(--gris-claro);border:1px solid var(--borde);border-radius:12px;
-   padding:16px 28px;font-family:'Poppins';font-weight:800;color:var(--navy);font-size:17px;transition:.2s}
- .marca-chip:hover{color:var(--rojo);transform:translateY(-3px);box-shadow:var(--sombra-sm)}
-
- /* ============ CONTACTO ============ */
+ /* CONTACTO */
  #contacto{position:relative;color:#fff;overflow:hidden}
- #contacto .bg{position:absolute;inset:0;z-index:0;background:linear-gradient(120deg,var(--navy3),var(--navy2))}
- #contacto .inner{position:relative;z-index:2}
- #contacto .titulo,#contacto .overline{color:#fff}
- #contacto .overline{color:var(--amarillo)}
- .grid-cont{display:grid;grid-template-columns:1fr 1fr;gap:46px;margin-top:40px;align-items:start}
- .cont-info{display:grid;gap:16px}
- .cont-info .row{display:flex;gap:14px;align-items:flex-start;font-size:16px;color:#dde7f7}
- .cont-info .ico{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:20px;flex:none}
- .cont-info .row b{display:block;color:#fff;font-family:'Poppins';margin-bottom:2px}
- .cont-info .btn{margin-top:8px;align-self:flex-start}
- form.cotiza{background:#fff;border-radius:20px;padding:30px;display:grid;gap:15px;box-shadow:var(--sombra)}
- form.cotiza label{font-size:13px;font-weight:700;color:var(--texto);display:grid;gap:6px;font-family:'Poppins'}
- form.cotiza input,form.cotiza textarea{padding:13px 15px;border:1px solid var(--borde);border-radius:10px;
-   font-size:15px;font-family:'Inter';color:var(--texto);background:var(--gris-claro)}
- form.cotiza input:focus,form.cotiza textarea:focus{outline:none;border-color:var(--azul);background:#fff}
- form.cotiza textarea{resize:vertical;min-height:100px}
+ #contacto .bg{position:absolute;inset:0;z-index:0;background:linear-gradient(120deg,var(--blue-ink),var(--blue-mid))}
+ #contacto .in{position:relative;z-index:2}
+ #contacto .h-title{color:#fff}#contacto .h-title .ac{color:var(--yellow)}#contacto .eyebrow{color:var(--yellow)}
+ .grid-cont{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:42px;align-items:start}
+ .cinfo{display:grid;gap:16px}
+ .cinfo .row{display:flex;gap:15px;align-items:flex-start;font-size:16px;color:#dde7f7}
+ .cinfo .ico{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:20px;flex:none}
+ .cinfo .row b{display:block;color:#fff;font-family:'Poppins';margin-bottom:2px}
+ .cinfo .btn{margin-top:6px;align-self:flex-start}
+ form.cot{background:#fff;border-radius:22px;padding:32px;display:grid;gap:16px;box-shadow:var(--sh)}
+ form.cot label{font-size:13px;font-weight:700;color:var(--ink);display:grid;gap:6px;font-family:'Poppins'}
+ form.cot input,form.cot textarea{padding:14px 16px;border:1px solid var(--line);border-radius:11px;font-size:15px;font-family:'Inter';color:var(--ink);background:var(--bg)}
+ form.cot input:focus,form.cot textarea:focus{outline:none;border-color:var(--sky);background:#fff}
+ form.cot textarea{resize:vertical;min-height:110px}
 
- /* ============ FOOTER ============ */
- footer.pie{background:var(--navy3);color:#9fb0cf;padding:64px 0 26px;font-size:14.5px}
- .pie-grid{display:grid;grid-template-columns:1.5fr 1fr 1.3fr;gap:40px;margin-bottom:36px}
- .pie .brand-name{color:#fff;font-size:26px}
- .pie .brand-sub{color:#fff;border-left-color:var(--amarillo)}
- .pie p{margin:16px 0 0;max-width:320px;line-height:1.7}
+ /* FOOTER */
+ footer.pie{background:var(--blue-ink);color:#9fb0cf;padding:68px 0 28px;font-size:14.5px}
+ .pie-grid{display:grid;grid-template-columns:1.5fr 1fr 1.3fr;gap:42px;margin-bottom:38px}
+ .pie .brand-name{color:#fff;font-size:26px}.pie .brand-sub{color:#fff;border-left-color:var(--yellow)}
+ .pie p{margin:16px 0 0;max-width:330px;line-height:1.75}
  .pie h4{color:#fff;margin:0 0 16px;font-size:15px;font-family:'Poppins'}
- .pie-grid a{display:block;padding:4px 0}
- .pie-grid a:hover{color:#fff}
- .pie .crow{display:flex;gap:10px;align-items:flex-start;padding:4px 0}
- .pie-copy{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;text-align:center;opacity:.8;font-size:13.5px}
+ .pie-grid a{display:block;padding:4px 0}.pie-grid a:hover{color:#fff}
+ .pie .crow{display:flex;gap:10px;align-items:flex-start;padding:5px 0}
+ .pie-copy{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;text-align:center;opacity:.8;font-size:13.5px}
 
  /* flotantes */
- .wa-float{position:fixed;right:22px;bottom:22px;z-index:90;background:#25d366;color:#fff;width:60px;height:60px;
-   border-radius:50%;display:grid;place-items:center;font-size:30px;box-shadow:0 10px 26px rgba(0,0,0,.28);transition:.2s}
+ .wa-float{position:fixed;right:22px;bottom:22px;z-index:95;background:#25d366;color:#fff;width:62px;height:62px;border-radius:50%;
+   display:grid;place-items:center;font-size:31px;box-shadow:0 12px 28px rgba(0,0,0,.3);transition:.2s;animation:pulse 2.6s infinite}
  .wa-float:hover{transform:scale(1.08)}
- .top-btn{position:fixed;right:24px;bottom:94px;z-index:90;background:var(--navy);color:#fff;width:46px;height:46px;
-   border-radius:12px;display:grid;place-items:center;font-size:20px;border:0;cursor:pointer;opacity:0;
-   pointer-events:none;transition:.25s;box-shadow:var(--sombra-sm)}
- .top-btn.show{opacity:1;pointer-events:auto}
- .top-btn:hover{background:var(--rojo)}
+ @keyframes pulse{0%{box-shadow:0 12px 28px rgba(0,0,0,.3),0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 12px 28px rgba(0,0,0,.3),0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 12px 28px rgba(0,0,0,.3),0 0 0 0 rgba(37,211,102,0)}}
+ .top-btn{position:fixed;right:26px;bottom:96px;z-index:95;background:var(--blue-ink);color:#fff;width:46px;height:46px;border-radius:12px;
+   display:grid;place-items:center;font-size:20px;border:0;cursor:pointer;opacity:0;pointer-events:none;transition:.25s;box-shadow:var(--sh-sm)}
+ .top-btn.show{opacity:1;pointer-events:auto}.top-btn:hover{background:var(--red)}
 
- /* ============ RESPONSIVE ============ */
+ /* RESPONSIVE */
  @media(max-width:1024px){
-   .grid-cat{grid-template-columns:repeat(2,1fr)}
-   .grid-dest{grid-template-columns:repeat(2,1fr)}
-   .grid-serv{grid-template-columns:repeat(2,1fr)}
-   .grid-prod{grid-template-columns:repeat(3,1fr)}
-   .statbar-grid{grid-template-columns:repeat(2,1fr)}
-   .statbar-grid .it:nth-child(2){border-right:0}
-   .bigstats .inner{grid-template-columns:repeat(2,1fr);gap:40px 20px}
-   .hero h1{font-size:46px}
+   .grid-cat,.grid-dest{grid-template-columns:repeat(2,1fr)}.grid-val{grid-template-columns:1fr}
+   .grid-prod{grid-template-columns:repeat(3,1fr)}.statbar .grid{grid-template-columns:repeat(2,1fr)}
+   .statbar .it:nth-child(2){border-right:0}.hero h1{font-size:46px}
+   #mision .grid,#calidad .grid{grid-template-columns:1fr}.precio-grid{grid-template-columns:repeat(3,1fr)}
  }
  @media(max-width:760px){
-   .menu{display:none}
-   .hamb{display:block}
-   .menu.open{display:flex;position:absolute;top:84px;left:0;right:0;flex-direction:column;background:#fff;
-     padding:18px 22px;gap:16px;box-shadow:var(--sombra);border-bottom:1px solid var(--borde)}
-   .seccion{padding:64px 0}
-   .titulo{font-size:30px}
-   .hero{min-height:auto}
-   .hero h1{font-size:36px}
-   .hero p{font-size:17px}
-   .grid-prod{grid-template-columns:repeat(2,1fr)}
-   #sobre .grid,.grid-cont,.pie-grid{grid-template-columns:1fr}
-   #sobre .foto-wrap{height:300px}#sobre .foto{height:300px}
-   .brand-sub{display:none}
+   .menu{display:none}.hamb{display:block}
+   .menu.open{display:flex;position:absolute;top:86px;left:0;right:0;flex-direction:column;background:#fff;padding:20px 24px;gap:18px;box-shadow:var(--sh);border-bottom:1px solid var(--line)}
+   .sec{padding:68px 0}.h-title{font-size:31px}.hero{min-height:auto}.hero h1{font-size:36px}.hero p{font-size:17px}
+   .grid-prod{grid-template-columns:repeat(2,1fr)}.grid-cont,.pie-grid{grid-template-columns:1fr}
+   #mision .foto-w{height:320px}.brand-sub{display:none}.ctaband .in{padding:60px 0}
  }
  @media(max-width:480px){
-   .grid-cat,.grid-dest,.grid-serv,.grid-prod{grid-template-columns:1fr}
-   .statbar-grid{grid-template-columns:1fr 1fr}
-   .bigstats b{font-size:40px}
-   .hero h1{font-size:30px}
+   .grid-cat,.grid-dest,.grid-prod{grid-template-columns:1fr}.statbar .grid{grid-template-columns:1fr 1fr}
+   .hero h1{font-size:30px}.precio-grid{grid-template-columns:1fr 1fr}
  }
 </style>
 </head>
 <body>
 
 <!-- TOPBAR -->
-<div class="topbar">
-  <div class="contenedor topbar-inner">
-    <div class="izq">
-      <a href="tel:+526656545282">📞 (665) 654-5282</a>
-      <span>🕗 Lun–Vie 8:00–17:00</span>
-    </div>
-    <div class="der">📍 Puebla 91-2, Col. Emiliano Zapata, Tecate, B.C.</div>
+<div class="topbar"><div class="wrap in">
+  <div class="l">
+    <a href="tel:+526656545282">📞 (665) 654-5282</a>
+    <span>🕗 Lun–Vie 8:00–17:00</span>
   </div>
-</div>
+  <span class="tag">⚙️ Soluciones industriales inteligentes</span>
+</div></div>
 
 <!-- NAV -->
-<header class="nav" id="nav">
-  <div class="contenedor nav-inner">
-    <a href="#inicio" class="brand" aria-label="FRAMA Industrial Supply">
-      <svg class="brand-ico" viewBox="0 0 64 64" aria-hidden="true">
-        <circle cx="32" cy="32" r="30" fill="#0d2a5c"/>
-        <circle cx="32" cy="32" r="30" fill="none" stroke="#1b6fe0" stroke-width="2"/>
-        <g fill="none" stroke="#ffffff" stroke-width="1.6" opacity=".85">
-          <ellipse cx="32" cy="32" rx="13" ry="30" transform="translate(0,0)"/>
-          <ellipse cx="32" cy="32" rx="30" ry="13"/>
-          <line x1="2" y1="32" x2="62" y2="32"/>
-        </g>
-        <g transform="translate(42,42)">
-          <circle r="11" fill="#ffd400"/>
-          <g fill="#0d2a5c">
-            <circle r="4.4"/>
-          </g>
-          <g fill="#ffd400" stroke="#ffd400">
-            <rect x="-1.6" y="-14" width="3.2" height="5"/>
-            <rect x="-1.6" y="9" width="3.2" height="5"/>
-            <rect x="-14" y="-1.6" width="5" height="3.2"/>
-            <rect x="9" y="-1.6" width="5" height="3.2"/>
-          </g>
-        </g>
-      </svg>
-      <span class="brand-tx">
-        <span class="brand-name">FRA<span>MA</span></span>
-        <span class="brand-sub">Industrial<br>Supply<small>S.A. DE C.V.</small></span>
-      </span>
-    </a>
-    <nav class="menu" id="menu">
-      <a href="#inicio">Inicio</a>
-      <a href="#categorias">Productos</a>
-      <a href="#catalogo">Catálogo</a>
-      <a href="#sobre">Nosotros</a>
-      <a href="#marcas">Marcas</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="nav-cta">
-      <a href="#contacto" class="btn btn-rojo">Cotizar</a>
-      <button class="hamb" id="hamb" aria-label="Menú">☰</button>
-    </div>
-  </div>
-</header>
+<header class="nav" id="nav"><div class="wrap in">
+  <a href="#inicio" class="brand" aria-label="FRAMA Industrial Supply">
+    <svg class="brand-ico" viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="32" cy="32" r="30" fill="#0b2452"/><circle cx="32" cy="32" r="30" fill="none" stroke="#2f7fe6" stroke-width="2"/>
+      <g fill="none" stroke="#fff" stroke-width="1.6" opacity=".85"><ellipse cx="32" cy="32" rx="13" ry="30"/><ellipse cx="32" cy="32" rx="30" ry="13"/><line x1="2" y1="32" x2="62" y2="32"/></g>
+      <g transform="translate(43,43)"><circle r="11.5" fill="#ffd400"/><circle r="4.4" fill="#0b2452"/>
+        <g fill="#ffd400"><rect x="-1.6" y="-14.5" width="3.2" height="5"/><rect x="-1.6" y="9.5" width="3.2" height="5"/><rect x="-14.5" y="-1.6" width="5" height="3.2"/><rect x="9.5" y="-1.6" width="5" height="3.2"/></g></g>
+    </svg>
+    <span class="brand-tx"><span class="brand-name">FRA<span>MA</span></span>
+      <span class="brand-sub">Industrial<br>Supply<small>S.A. DE C.V.</small></span></span>
+  </a>
+  <nav class="menu" id="menu">
+    <a href="#inicio">Inicio</a><a href="#categorias">Productos</a><a href="#catalogo">Catálogo</a>
+    <a href="#mision">Nosotros</a><a href="#calidad">Marcas</a><a href="#contacto">Contacto</a>
+  </nav>
+  <div class="nav-cta"><a href="#contacto" class="btn btn-red">Cotizar</a><button class="hamb" id="hamb" aria-label="Menú">☰</button></div>
+</div></header>
 
 <!-- HERO -->
 <section class="hero" id="inicio">
   <div class="bg ph"><img alt="" data-img="hero" onerror="this.classList.add('fail')"></div>
-  <div class="contenedor hero-inner">
-    <span class="pill">⚙️ Soluciones y servicios a sus necesidades industriales</span>
-    <h1>Tu proveedor de <b>ferretería y suministro industrial</b> en Tecate</h1>
-    <p>Herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO. Inventario amplio, marcas reconocidas y entrega a tiempo para maquiladoras y empresas.</p>
-    <div class="acciones">
-      <a href="#categorias" class="btn btn-amarillo">Ver productos</a>
+  <div class="glow"></div>
+  <div class="wrap in">
+    <span class="pill">★ Proveedor industrial en Tecate, B.C.</span>
+    <h1>Soluciones industriales <b>inteligentes</b> que impulsan tu productividad</h1>
+    <p>Material eléctrico, herramientas, baleros, tornillería, EPP, pintura y MRO. Las mejores marcas, calidad garantizada y precios que hacen la diferencia.</p>
+    <div class="acc">
+      <a href="#categorias" class="btn btn-yellow">Ver productos</a>
       <a href="https://wa.me/526656545282" target="_blank" rel="noopener" class="btn btn-wa">💬 Hablar con un experto</a>
       <a href="#catalogo" class="btn btn-ghost">Explorar catálogo</a>
     </div>
-    <div class="mini">
-      <span>✓ Atención local en Tecate, B.C.</span>
-      <span>✓ Cotización en menos de 24 h</span>
-    </div>
+    <div class="mini"><span>✓ Atención local en Tecate</span><span>✓ Cotización en menos de 24 h</span><span>✓ +10 años de experiencia</span></div>
   </div>
 </section>
 
-<!-- STATBAR -->
-<div class="contenedor statbar">
-  <div class="statbar-grid reveal">
-    <div class="it"><b>+1,500</b><span>Productos en catálogo</span></div>
-    <div class="it"><b>+10</b><span>Años de experiencia</span></div>
-    <div class="it"><b>24 h</b><span>Respuesta a cotizaciones</span></div>
-    <div class="it"><b>8</b><span>Líneas de producto</span></div>
-  </div>
+<!-- MARQUEE MARCAS -->
+<div class="marcas-strip">
+  <div class="lbl">Las mejores marcas del mercado</div>
+  <div class="marquee"><div class="mq-track" id="mqTrack"></div></div>
 </div>
 
+<!-- STATBAR -->
+<div class="wrap statbar"><div class="grid rv" id="statbar">
+  <div class="it"><b data-count="1500" data-pre="+">+1,500</b><span>Productos en catálogo</span></div>
+  <div class="it"><b data-count="10" data-pre="+">+10</b><span>Años de experiencia</span></div>
+  <div class="it"><b data-count="8">8</b><span>Líneas de producto</span></div>
+  <div class="it"><b data-count="24" data-suf=" h">24 h</b><span>Respuesta a cotizaciones</span></div>
+</div></div>
+
 <!-- CATEGORIAS -->
-<section class="seccion" id="categorias">
-  <div class="contenedor">
-    <div class="centro head-mb reveal">
-      <span class="overline">Nuestras líneas</span>
-      <h2 class="titulo">Explora nuestras <span class="ac">categorías</span></h2>
-      <p class="subt">Da clic en una categoría para ver los productos disponibles en el catálogo.</p>
-    </div>
-    <div class="grid-cat" id="gridCat"></div>
+<section class="sec" id="categorias"><div class="wrap">
+  <div class="center head rv">
+    <span class="eyebrow">Nuestras líneas</span>
+    <h2 class="h-title">Explora nuestras <span class="ac">categorías</span></h2>
+    <p class="h-sub">Da clic en cualquier categoría para ver los productos en el catálogo.</p>
   </div>
-</section>
+  <div class="grid-cat" id="gridCat"></div>
+</div></section>
+
+<!-- MISION -->
+<section class="sec" id="mision"><div class="wrap">
+  <div class="grid">
+    <div class="foto-w rv">
+      <div class="foto ph"><img alt="Equipo FRAMA Industrial Supply" data-img="mision" onerror="this.classList.add('fail')"></div>
+      <div class="stamp"><b>+10</b><span>años en el sector industrial</span></div>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">Sobre nosotros</span>
+      <h2 class="h-title">Somos apasionados y tenemos <span class="ac">años de experiencia</span> en el sector</h2>
+      <p class="h-sub">FRAMA Industrial Supply, S.A. de C.V. es una ferretería y proveedor industrial en Tecate, B.C., comprometido con abastecer a maquiladoras y empresas con producto disponible, las mejores marcas y atención cercana.</p>
+      <div class="mv">
+        <div class="card"><h4>🎯 Nuestra misión</h4><p>Proveer soluciones industriales de alta calidad, confiables y eficientes, que ayuden a nuestros clientes a operar mejor y crecer.</p></div>
+        <div class="card"><h4>🚀 Nuestra visión</h4><p>Ser el proveedor industrial de referencia en la región, reconocido por su servicio, disponibilidad y precios competitivos.</p></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- VALORES -->
+<section class="sec" id="valores"><div class="wrap">
+  <div class="center head rv">
+    <span class="eyebrow">Por qué elegirnos</span>
+    <h2 class="h-title">La ventaja <span class="ac">FRAMA</span></h2>
+  </div>
+  <div class="grid-val">
+    <div class="val rv"><div class="ico">🏗️</div><h3>Materiales para la industria</h3><p>Material de construcción, ferretería y suministros industriales con amplio inventario en un solo lugar.</p></div>
+    <div class="val rv"><div class="ico">🤝</div><h3>Atención experta</h3><p>Te ayudamos a encontrar exactamente lo que tu proyecto necesita, con asesoría y cotizaciones rápidas.</p></div>
+    <div class="val rv"><div class="ico">💡</div><h3>Soluciones a tu medida</h3><p>Si no está en catálogo, lo conseguimos. Soluciones para cada proyecto industrial.</p></div>
+  </div>
+</div></section>
 
 <!-- DESTACADOS -->
-<section class="seccion" id="destacados">
-  <div class="contenedor">
-    <div class="centro head-mb reveal">
-      <span class="overline">Lo más solicitado</span>
-      <h2 class="titulo">Productos <span class="ac">destacados</span></h2>
-      <p class="subt">Una muestra de lo que manejamos. Cotiza cualquier producto al instante por WhatsApp.</p>
-    </div>
-    <div class="grid-dest" id="gridDest"></div>
+<section class="sec" id="destacados"><div class="wrap">
+  <div class="center head rv">
+    <span class="eyebrow">Lo más solicitado</span>
+    <h2 class="h-title">Productos <span class="ac">destacados</span></h2>
+    <p class="h-sub">Una muestra de lo que manejamos. Cotiza cualquier producto al instante por WhatsApp.</p>
   </div>
-</section>
-
-<!-- BIG STATS -->
-<section class="bigstats">
-  <div class="bg ph"><img alt="" data-img="stats" onerror="this.classList.add('fail')"></div>
-  <div class="contenedor">
-    <div class="inner">
-      <div class="reveal"><b>+10</b><span>Años de experiencia</span></div>
-      <div class="reveal"><b>+1,500</b><span>Productos disponibles</span></div>
-      <div class="reveal"><b><span class="y">8</span></b><span>Líneas de producto</span></div>
-      <div class="reveal"><b>100%</b><span>Enfoque industrial</span></div>
-    </div>
-  </div>
-</section>
+  <div class="grid-dest" id="gridDest"></div>
+</div></section>
 
 <!-- CATALOGO -->
-<section class="seccion" id="catalogo">
-  <div class="contenedor">
-    <div class="centro head-mb reveal">
-      <span class="overline">Catálogo completo</span>
-      <h2 class="titulo">Encuentra lo que <span class="ac">necesitas</span></h2>
-      <p class="subt">Filtra por categoría, busca por nombre o SKU y solicita tu cotización al instante.</p>
+<section class="sec" id="catalogo"><div class="wrap">
+  <div class="center head rv">
+    <span class="eyebrow">Catálogo completo</span>
+    <h2 class="h-title">Encuentra lo que <span class="ac">necesitas</span></h2>
+    <p class="h-sub">Filtra por categoría, busca por nombre o SKU y solicita tu cotización al instante.</p>
+  </div>
+  <div class="ctrl">
+    <div class="busc">🔎 <input type="search" id="busqueda" placeholder="Buscar producto, SKU o categoría…" aria-label="Buscar"></div>
+    <button class="btn btn-borde" id="btnCSV">⬇️ Exportar CSV</button>
+  </div>
+  <div class="filtros" id="filtros"></div>
+  <div class="grid-prod" id="gridProd"></div>
+  <div class="cat-acc"><a href="#contacto" class="btn btn-red">¿No encuentras algo? Pídelo a la medida</a></div>
+</div></section>
+
+<!-- CTA BANDA -->
+<section class="ctaband">
+  <div class="bg ph"><img alt="" data-img="cta" onerror="this.classList.add('fail')"></div>
+  <div class="wrap in">
+    <div class="rv">
+      <h2>Descubre cómo podemos ayudarte con tu proyecto industrial</h2>
+      <p>Te ayudamos a encontrar las herramientas y materiales que tu operación necesita.</p>
     </div>
-    <div class="cat-controles">
-      <div class="buscador">🔎 <input type="search" id="busqueda" placeholder="Buscar producto, SKU o categoría…" aria-label="Buscar"></div>
-      <button class="btn btn-borde" id="btnCSV">⬇️ Exportar CSV</button>
-    </div>
-    <div class="filtros" id="filtros"></div>
-    <div class="grid-prod" id="gridProd"></div>
-    <div class="cat-acciones">
-      <a href="#contacto" class="btn btn-rojo">¿No encuentras algo? Pídelo a la medida</a>
-    </div>
+    <a href="https://wa.me/526656545282" target="_blank" rel="noopener" class="btn btn-yellow rv">💬 Solicitar información</a>
   </div>
 </section>
 
-<!-- POR QUE -->
-<section class="seccion" id="porque">
-  <div class="contenedor">
-    <div class="centro head-mb reveal">
-      <span class="overline">Por qué elegirnos</span>
-      <h2 class="titulo">La ventaja <span class="ac">FRAMA</span></h2>
-    </div>
-    <div class="grid-serv">
-      <div class="card-serv reveal"><div class="ico">📦</div><h3>Inventario amplio</h3><p>Herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO en un solo lugar.</p></div>
-      <div class="card-serv reveal"><div class="ico">⏱️</div><h3>Respuesta rápida</h3><p>Cotizamos en menos de 24 horas, con atención y seguimiento personalizado.</p></div>
-      <div class="card-serv reveal"><div class="ico">🏅</div><h3>Marcas reconocidas</h3><p>Productos certificados de las mejores marcas industriales del mercado.</p></div>
-      <div class="card-serv reveal"><div class="ico">🚚</div><h3>Entrega a tiempo</h3><p>Logística confiable para maquiladoras y empresas de Tecate y la región.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SOBRE -->
-<section class="seccion" id="sobre">
-  <div class="contenedor">
-    <div class="grid">
-      <div class="foto-wrap reveal">
-        <div class="foto ph"><img alt="Almacén industrial FRAMA" data-img="sobre" onerror="this.classList.add('fail')"></div>
-        <div class="tag"><b>+10</b><span>años sirviendo a la industria</span></div>
-      </div>
-      <div class="reveal">
-        <span class="overline">Sobre nosotros</span>
-        <h2 class="titulo">Soluciones a tus necesidades <span class="ac">industriales</span></h2>
-        <p class="subt">FRAMA Industrial Supply, S.A. de C.V. es una ferretería y proveedor industrial en Tecate, B.C., enfocado en abastecer a maquiladoras y empresas con atención cercana y producto disponible.</p>
-        <ul>
-          <li>Herramientas, material eléctrico, tornillería, acero y tubería.</li>
-          <li>Equipo de protección personal (EPP) y herramienta neumática.</li>
-          <li>Suministros para mantenimiento industrial (MRO).</li>
-          <li>Cotizaciones rápidas y entrega puntual en la región.</li>
-        </ul>
-        <a href="#contacto" class="btn btn-navy">Contáctanos →</a>
+<!-- CALIDAD / PRECIOS -->
+<section class="sec" id="calidad"><div class="wrap">
+  <div class="grid">
+    <div class="rv">
+      <span class="eyebrow">Calidad garantizada</span>
+      <h2 class="h-title">La calidad que su <span style="color:var(--yellow)">industria exige</span></h2>
+      <p class="h-sub">Explore nuestro amplio catálogo con las mejores marcas del mercado, calidad garantizada y precios que hacen la diferencia.</p>
+      <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap">
+        <a href="#catalogo" class="btn btn-yellow">Ver catálogo</a>
+        <a href="#contacto" class="btn btn-ghost">Pedir cotización</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- MARCAS -->
-<section class="seccion" id="marcas">
-  <div class="contenedor">
-    <div class="centro head-mb reveal">
-      <span class="overline">Confianza</span>
-      <h2 class="titulo">Marcas que <span class="ac">manejamos</span></h2>
-      <p class="subt">Trabajamos con marcas líderes para garantizar calidad y disponibilidad.</p>
+    <div class="precio-card rv">
+      <span class="top">★ Los mejores precios</span>
+      <div class="precio-grid" id="precioGrid"></div>
     </div>
-    <div class="tira-marcas reveal">
-      <span class="marca-chip">Truper</span>
-      <span class="marca-chip">DeWalt</span>
-      <span class="marca-chip">Milwaukee</span>
-      <span class="marca-chip">3M</span>
-      <span class="marca-chip">Urrea</span>
-      <span class="marca-chip">Surtek</span>
-    </div>
-    <p class="subt centro" style="font-size:14px;margin-top:18px">* Marcas de referencia. Confírmanos disponibilidad de tu marca preferida.</p>
   </div>
-</section>
+</div></section>
 
 <!-- CONTACTO -->
-<section class="seccion" id="contacto">
+<section class="sec" id="contacto">
   <div class="bg"></div>
-  <div class="contenedor inner">
-    <div class="centro reveal">
-      <span class="overline">Contacto</span>
-      <h2 class="titulo">Solicita tu <span style="color:var(--amarillo)">cotización</span></h2>
-      <p class="subt" style="color:#dde7f7;margin-left:auto;margin-right:auto">Te atendemos por WhatsApp o teléfono. Respuesta en menos de 24 horas.</p>
+  <div class="wrap in">
+    <div class="center rv">
+      <span class="eyebrow">Contacto</span>
+      <h2 class="h-title">Solicita tu <span class="ac">cotización</span></h2>
+      <p class="h-sub" style="color:#dde7f7">Te atendemos por WhatsApp o teléfono. Respuesta en menos de 24 horas.</p>
     </div>
     <div class="grid-cont">
-      <div class="cont-info reveal">
+      <div class="cinfo rv">
         <div class="row"><div class="ico">📞</div><div><b>Teléfono</b><a href="tel:+526656545282">(665) 654-5282</a></div></div>
         <div class="row"><div class="ico">💬</div><div><b>WhatsApp</b><a href="https://wa.me/526656545282" target="_blank" rel="noopener">+52 665 654 5282</a></div></div>
         <div class="row"><div class="ico">📍</div><div><b>Dirección</b>Puebla 91-2, Col. Emiliano Zapata, C.P. 21460, Tecate, Baja California, México</div></div>
         <div class="row"><div class="ico">🕗</div><div><b>Horario</b>Lunes a viernes 8:00–17:00 · Sábado y domingo cerrado</div></div>
-        <a class="btn btn-amarillo" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=FRAMA+Industrial+Supply+Puebla+91-2+Emiliano+Zapata+21460+Tecate+Baja+California">📍 Cómo llegar</a>
+        <a class="btn btn-yellow" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=FRAMA+Industrial+Supply+Puebla+91-2+Emiliano+Zapata+21460+Tecate+Baja+California">📍 Cómo llegar</a>
       </div>
-      <form class="cotiza reveal" id="formCotiza">
+      <form class="cot rv" id="formCotiza">
         <label>Nombre / Empresa<input type="text" name="nombre" required placeholder="Tu nombre o empresa"></label>
         <label>Teléfono<input type="tel" name="telefono" placeholder="Tu número (opcional)"></label>
         <label>¿Qué necesitas?<textarea name="mensaje" required placeholder="Describe los productos y cantidades…"></textarea></label>
@@ -585,284 +517,188 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="pie">
-  <div class="contenedor">
-    <div class="pie-grid">
-      <div>
-        <span class="brand-tx">
-          <span class="brand-name">FRA<span style="color:var(--rojo)">MA</span></span>
-          <span class="brand-sub">Industrial<br>Supply</span>
-        </span>
-        <p>Soluciones y servicios a sus necesidades industriales. Ferretería industrial en Tecate, B.C.: herramientas, material eléctrico, tornillería, acero, tubería, EPP y MRO.</p>
-      </div>
-      <div>
-        <h4>Enlaces</h4>
-        <a href="#categorias">Productos</a>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#sobre">Nosotros</a>
-        <a href="#marcas">Marcas</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <div class="crow">📞 <a href="tel:+526656545282">(665) 654-5282</a></div>
-        <div class="crow">💬 <a href="https://wa.me/526656545282" target="_blank" rel="noopener">WhatsApp: +52 665 654 5282</a></div>
-        <div class="crow">📍 <span>Puebla 91-2, Col. Emiliano Zapata,<br>C.P. 21460, Tecate, B.C., México</span></div>
-        <div class="crow">🕗 <span>Lun–Vie 8:00–17:00</span></div>
-      </div>
+<footer class="pie"><div class="wrap">
+  <div class="pie-grid">
+    <div>
+      <span class="brand-tx"><span class="brand-name">FRA<span style="color:var(--red)">MA</span></span>
+        <span class="brand-sub">Industrial<br>Supply</span></span>
+      <p>Soluciones industriales inteligentes que impulsan tu productividad. Ferretería industrial en Tecate, B.C.: material eléctrico, herramientas, baleros, tornillería, EPP, pintura y MRO.</p>
     </div>
-    <div class="pie-copy">© <span id="anio"></span> FRAMA Industrial Supply, S.A. de C.V. · Todos los derechos reservados.</div>
+    <div><h4>Enlaces</h4>
+      <a href="#categorias">Productos</a><a href="#catalogo">Catálogo</a><a href="#mision">Nosotros</a><a href="#calidad">Marcas</a><a href="#contacto">Contacto</a>
+    </div>
+    <div><h4>Contacto</h4>
+      <div class="crow">📞 <a href="tel:+526656545282">(665) 654-5282</a></div>
+      <div class="crow">💬 <a href="https://wa.me/526656545282" target="_blank" rel="noopener">WhatsApp: +52 665 654 5282</a></div>
+      <div class="crow">📍 <span>Puebla 91-2, Col. Emiliano Zapata,<br>C.P. 21460, Tecate, B.C., México</span></div>
+      <div class="crow">🕗 <span>Lun–Vie 8:00–17:00</span></div>
+    </div>
   </div>
-</footer>
+  <div class="pie-copy">© <span id="anio"></span> FRAMA Industrial Supply, S.A. de C.V. · Todos los derechos reservados.</div>
+</div></footer>
 
 <a class="wa-float" href="https://wa.me/526656545282" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
 <button class="top-btn" id="topBtn" aria-label="Subir">↑</button>
 
 <!-- ====== SCRIPTS ====== -->
 <script>
- // =================== IMÁGENES (fotos reales vía CDN; con respaldo de marca) ===================
+ // ============ IMÁGENES (fotos reales vía CDN, con respaldo de marca) ============
  const U = (id,w=900) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
  const IMG = {
-   hero:  U("1581094288338-2314dddb7ece",1920),
-   stats: U("1565514020179-026b92b84bb6",1600),
-   sobre: U("1504917595217-d4dc5ebe6122",1200)
+   hero:   U("1565793298595-6a879b1d9492",1920),
+   mision: U("1504917595217-d4dc5ebe6122",1200),
+   cta:    U("1581091870622-1c6a7d3a4f1f",1600)
  };
 
- // =================== DATA ===================
+ // ============ MARCAS ============
+ const MARCAS = ["3M","FAG","Makita","ULINE","URREA","TRUPER","SIEMENS","Surtek","Vargas","DeWalt"];
+
+ // ============ DATA ============
  const CATEGORIES = [
-   { id:"herramientas", name:"Herramientas",         icon:"🧰", img:U("1581244277943-fe4a9c777189") },
-   { id:"electrico",    name:"Material eléctrico",    icon:"⚡", img:U("1621905251189-08b45d6a269e") },
-   { id:"neumatica",    name:"Herramienta neumática", icon:"💨", img:U("1530124566582-a618bc2615dc") },
-   { id:"tornilleria",  name:"Tornillería",           icon:"🔩", img:U("1606760227091-3dd870d97f1d") },
-   { id:"acero",        name:"Acero y metales",       icon:"🏗️", img:U("1565374790533-1d0c8b3b4e94") },
-   { id:"tuberia",      name:"Tubería y conexiones",  icon:"🔧", img:U("1581092446327-9b52bd1570c2") },
-   { id:"epp",          name:"Protección (EPP)",      icon:"🦺", img:U("1578091879915-2a8f9d3a3b3a") },
-   { id:"mro",          name:"MRO / Mantenimiento",   icon:"🛠️", img:U("1504148455328-c376907d081c") }
+   { id:"electrico",   name:"Material eléctrico",        icon:"⚡", img:U("1621905251189-08b45d6a269e") },
+   { id:"herramientas",name:"Herramientas",              icon:"🧰", img:U("1581244277943-fe4a9c777189") },
+   { id:"baleros",     name:"Baleros, chumaceras y bandas",icon:"⚙️",img:U("1530124566582-a618bc2615dc") },
+   { id:"tornilleria", name:"Tornillería y sujetadores", icon:"🔩", img:U("1606760227091-3dd870d97f1d") },
+   { id:"seguridad",   name:"Equipo de seguridad (EPP)", icon:"🦺", img:U("1578091879915-2a8f9d3a3b3a") },
+   { id:"consumibles", name:"Abrasivos y consumibles",   icon:"🪚", img:U("1572981779307-38b8cabb2407") },
+   { id:"pintura",     name:"Pintura y recubrimientos",  icon:"🎨", img:U("1589939705384-5185137a7f0f") },
+   { id:"mro",         name:"MRO / Mantenimiento",       icon:"🛠️", img:U("1504148455328-c376907d081c") }
  ];
 
  const PRODUCTS = [
-   { id:"p001", name:"Juego de desarmadores 6 pzas",   category:"herramientas", sku:"HER-DS-06",  unit:"juego", destacado:true,  badge:"Más vendido", description:"Desarmadores planos y de cruz con mango ergonómico antiderrapante." },
-   { id:"p002", name:"Llave ajustable 10\"",            category:"herramientas", sku:"HER-LL-10",  unit:"pieza", description:"Llave ajustable de acero al cromo vanadio, 10 pulgadas." },
-   { id:"p003", name:"Taladro inalámbrico 20V",        category:"herramientas", sku:"HER-TL-20",  unit:"pieza", destacado:true,  badge:"Destacado", description:"Taladro percutor con batería de litio, velocidad variable y cargador." },
-   { id:"p004", name:"Cable THW calibre 12",           category:"electrico",    sku:"ELE-THW-12", unit:"metro", description:"Cable de cobre THW 600V, calibre 12 AWG para instalaciones." },
-   { id:"p005", name:"Contactor tripolar 25A",         category:"electrico",    sku:"ELE-CT-25",  unit:"pieza", description:"Contactor 3 polos 25A, bobina 110/220V, uso industrial." },
-   { id:"p006", name:"Interruptor termomagnético 2x30",category:"electrico",    sku:"ELE-IT-230", unit:"pieza", description:"Interruptor termomagnético 2 polos 30A para tablero." },
-   { id:"p007", name:"Pistola de impacto neumática 1/2\"",category:"neumatica", sku:"NEU-IMP-12", unit:"pieza", destacado:true,  badge:"Pro", description:"Pistola de impacto neumática 1/2\", alto torque para taller." },
-   { id:"p008", name:"Pulidora neumática",             category:"neumatica",    sku:"NEU-PUL-01", unit:"pieza", description:"Pulidora/esmeriladora neumática para acabado y desbaste." },
-   { id:"p009", name:"Tornillo hexagonal 3/8\" (caja)", category:"tornilleria", sku:"TOR-HEX-38", unit:"caja",  description:"Tornillo cabeza hexagonal 3/8\", grado 5, por caja." },
-   { id:"p010", name:"Taquete de expansión 1/4\" (caja)",category:"tornilleria",sku:"TOR-TAQ-14", unit:"caja",  description:"Taquete de expansión metálico 1/4\", por caja." },
-   { id:"p011", name:"Solera de acero 1/8\" x 1\"",      category:"acero",       sku:"ACE-SOL-18", unit:"metro", description:"Solera de acero al carbón, 1/8\" de espesor x 1\" de ancho." },
-   { id:"p012", name:"Ángulo de acero 1\"",             category:"acero",        sku:"ACE-ANG-1",  unit:"metro", description:"Ángulo de acero estructural de 1 pulgada." },
-   { id:"p013", name:"Tubo conduit galvanizado 3/4\"",  category:"tuberia",      sku:"TUB-CON-34", unit:"tramo", description:"Tubo conduit pared gruesa galvanizado, 3/4\"." },
-   { id:"p014", name:"Codo PVC 90° 1\"",                category:"tuberia",      sku:"TUB-CODO-1", unit:"pieza", description:"Codo de PVC hidráulico 90 grados, 1 pulgada." },
-   { id:"p015", name:"Guantes de carnaza",             category:"epp",          sku:"EPP-GC-01",  unit:"par",   destacado:true,  badge:"Top EPP", description:"Guantes de carnaza reforzados para trabajo pesado." },
-   { id:"p016", name:"Lentes de seguridad claros",     category:"epp",          sku:"EPP-LS-01",  unit:"pieza", description:"Lentes de protección con resistencia a impacto, antiempañante." },
-   { id:"p017", name:"Grasa multiusos de litio 400g",  category:"mro",          sku:"MRO-GR-400", unit:"tubo",  description:"Grasa lubricante de litio para baleros y maquinaria." },
-   { id:"p018", name:"Cinta de aislar",                category:"mro",          sku:"MRO-CA-01",  unit:"rollo", description:"Cinta aislante de uso eléctrico, alta adherencia." }
+   { id:"p001", name:"Cable THW calibre 12",            category:"electrico",   sku:"ELE-THW-12", unit:"metro", description:"Cable de cobre THW 600V, calibre 12 AWG para instalaciones." },
+   { id:"p002", name:"Contactor tripolar 25A",          category:"electrico",   sku:"ELE-CT-25",  unit:"pieza", description:"Contactor 3 polos 25A, bobina 110/220V, uso industrial." },
+   { id:"p003", name:"Interruptor termomagnético 2x30", category:"electrico",   sku:"ELE-IT-230", unit:"pieza", description:"Interruptor termomagnético 2 polos 30A para tablero." },
+   { id:"p004", name:"Juego de desarmadores 6 pzas",    category:"herramientas",sku:"HER-DS-06",  unit:"juego", destacado:true, badge:"Más vendido", description:"Desarmadores planos y de cruz con mango ergonómico antiderrapante." },
+   { id:"p005", name:"Taladro inalámbrico 20V",         category:"herramientas",sku:"HER-TL-20",  unit:"pieza", destacado:true, badge:"Destacado", description:"Taladro percutor con batería de litio, velocidad variable y cargador." },
+   { id:"p006", name:"Llave ajustable 10\"",             category:"herramientas",sku:"HER-LL-10",  unit:"pieza", description:"Llave ajustable de acero al cromo vanadio, 10 pulgadas." },
+   { id:"p007", name:"Balero rígido de bolas 6205-2RS", category:"baleros",     sku:"BAL-6205",   unit:"pieza", destacado:true, badge:"Top", description:"Rodamiento sellado 6205-2RS, 25x52x15 mm, marca de calidad." },
+   { id:"p008", name:"Chumacera de piso UCP205",        category:"baleros",     sku:"BAL-UCP205", unit:"pieza", description:"Chumacera de pie con balero insertado, eje 25 mm." },
+   { id:"p009", name:"Banda en V A-50",                 category:"baleros",     sku:"BAL-BV-A50", unit:"pieza", description:"Banda industrial en V tipo A, 50 pulgadas." },
+   { id:"p010", name:"Tornillo hexagonal 3/8\" (caja)",  category:"tornilleria", sku:"TOR-HEX-38", unit:"caja",  description:"Tornillo cabeza hexagonal 3/8\", grado 5, por caja." },
+   { id:"p011", name:"Taquete de expansión 1/4\" (caja)",category:"tornilleria", sku:"TOR-TAQ-14", unit:"caja",  description:"Taquete de expansión metálico 1/4\", por caja." },
+   { id:"p012", name:"Guantes de carnaza",              category:"seguridad",   sku:"EPP-GC-01",  unit:"par",   destacado:true, badge:"Top EPP", description:"Guantes de carnaza reforzados para trabajo pesado." },
+   { id:"p013", name:"Lentes de seguridad claros",      category:"seguridad",   sku:"EPP-LS-01",  unit:"pieza", description:"Lentes de protección con resistencia a impacto, antiempañante." },
+   { id:"p014", name:"Casco de seguridad",              category:"seguridad",   sku:"EPP-CS-01",  unit:"pieza", description:"Casco industrial con suspensión ajustable, certificado." },
+   { id:"p015", name:"Disco de corte 4-1/2\"",           category:"consumibles", sku:"CON-DC-45",  unit:"pieza", description:"Disco abrasivo para corte de metal, 4-1/2 pulgadas." },
+   { id:"p016", name:"Lija de banda grano 80",          category:"consumibles", sku:"CON-LB-80",  unit:"pieza", description:"Lija de banda para desbaste, grano 80." },
+   { id:"p017", name:"Pintura esmalte industrial 1L",   category:"pintura",     sku:"PIN-ESM-1L", unit:"litro", description:"Esmalte alquidálico de secado rápido para metal." },
+   { id:"p018", name:"Thinner estándar 1L",             category:"pintura",     sku:"PIN-THN-1L", unit:"litro", description:"Solvente para dilución y limpieza, presentación 1L." },
+   { id:"p019", name:"Grasa multiusos de litio 400g",   category:"mro",         sku:"MRO-GR-400", unit:"tubo",  description:"Grasa lubricante de litio para baleros y maquinaria." },
+   { id:"p020", name:"Cinta de aislar",                 category:"mro",         sku:"MRO-CA-01",  unit:"rollo", description:"Cinta aislante de uso eléctrico, alta adherencia." }
  ];
 
- // =================== CONFIG ===================
- const WHATSAPP    = "526656545282";
- const TEL         = "+526656545282";
+ // ============ CONFIG ============
+ const WHATSAPP="526656545282", TEL="+526656545282";
 
- // =================== HELPERS ===================
- const $  = (s, c=document) => c.querySelector(s);
- const $$ = (s, c=document) => Array.from(c.querySelectorAll(s));
- const categoryName  = (id) => (CATEGORIES.find(c => c.id === id) || {}).name || id;
- const categoryImg   = (id) => (CATEGORIES.find(c => c.id === id) || {}).img || "";
- const waLink = (texto) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`;
- const imgTag = (src, alt="") => `<img alt="${alt}" src="${src}" loading="lazy" onerror="this.classList.add('fail')">`;
+ // ============ HELPERS ============
+ const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>Array.from(c.querySelectorAll(s));
+ const catName=id=>(CATEGORIES.find(c=>c.id===id)||{}).name||id;
+ const catImg =id=>(CATEGORIES.find(c=>c.id===id)||{}).img||"";
+ const wa=t=>`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;
+ const imgTag=(src,alt="")=>`<img alt="${alt}" src="${src}" loading="lazy" onerror="this.classList.add('fail')">`;
 
- // =================== ESTADO ===================
- let filtroActivo = "all";
- let textoBusqueda = "";
+ // ============ ESTADO ============
+ let filtro="all", busq="";
 
- // =================== RENDER ===================
- function productosFiltrados(){
-   const t = textoBusqueda.trim().toLowerCase();
-   return PRODUCTS.filter(p => {
-     const okCat = filtroActivo === "all" || p.category === filtroActivo;
-     const okTxt = !t || [p.name, p.sku, categoryName(p.category)].some(v => v.toLowerCase().includes(t));
-     return okCat && okTxt;
-   });
+ // ============ RENDER ============
+ const filtrados=()=>{const t=busq.trim().toLowerCase();
+   return PRODUCTS.filter(p=>(filtro==="all"||p.category===filtro)&&(!t||[p.name,p.sku,catName(p.category)].some(v=>v.toLowerCase().includes(t))));};
+
+ function renderMarcas(){ const list=[...MARCAS,...MARCAS];
+   $("#mqTrack").innerHTML=list.map(m=>`<span>${m}</span>`).join(""); }
+
+ function renderPrecios(){ $("#precioGrid").innerHTML=MARCAS.slice(0,9).map(m=>`<div>${m}</div>`).join(""); }
+
+ function renderCategorias(){ const c=$("#gridCat");
+   c.innerHTML=CATEGORIES.map(x=>
+     `<div class="cat-card" data-cat="${x.id}"><div class="ph">${imgTag(x.img,x.name)}</div>
+        <div class="ct"><span class="ico">${x.icon}</span><span class="nm">${x.name}</span><small>Ver productos →</small></div>
+        <div class="bar"></div></div>`).join("");
+   $$(".cat-card",c).forEach(card=>card.addEventListener("click",()=>{
+     filtro=card.dataset.cat; renderFiltros(); renderProductos(); $("#catalogo").scrollIntoView({behavior:"smooth"});}));
  }
 
- function renderCategorias(){
-   const cont = $("#gridCat");
-   cont.innerHTML = CATEGORIES.map(c =>
-     `<div class="cat-card" data-cat="${c.id}">
-        <div class="ph">${imgTag(c.img, c.name)}</div>
-        <div class="flecha">→</div>
-        <div class="cont"><span class="ico">${c.icon}</span><span>${c.name}</span></div>
-      </div>`
-   ).join("");
-   $$(".cat-card", cont).forEach(card => card.addEventListener("click", () => {
-     filtroActivo = card.dataset.cat;
-     renderFiltros(); renderProductos();
-     $("#catalogo").scrollIntoView({ behavior:"smooth" });
-   }));
+ function renderDestacados(){ const dest=PRODUCTS.filter(p=>p.destacado).slice(0,6);
+   $("#gridDest").innerHTML=dest.map(p=>
+     `<article class="dest"><div class="foto">${p.badge?`<span class="badge">${p.badge}</span>`:""}<div class="ph">${imgTag(catImg(p.category),p.name)}</div></div>
+        <div class="body"><span class="et">${catName(p.category)}</span><h3>${p.name}</h3><p>${p.description}</p>
+        <a class="btn btn-red" target="_blank" rel="noopener" href="${wa(msg(p))}">Cotizar ahora →</a></div></article>`).join("");
  }
 
- function renderDestacados(){
-   const cont = $("#gridDest");
-   const dest = PRODUCTS.filter(p => p.destacado).slice(0,6);
-   cont.innerHTML = dest.map(p =>
-     `<article class="dest-card">
-        <div class="foto">
-          ${p.badge ? `<span class="badge">${p.badge}</span>` : ""}
-          <div class="ph">${imgTag(categoryImg(p.category), p.name)}</div>
-        </div>
-        <div class="body">
-          <span class="et">${categoryName(p.category)}</span>
-          <h3>${p.name}</h3>
-          <p>${p.description}</p>
-          <a class="btn btn-rojo" target="_blank" rel="noopener" href="${waLink(mensajeProducto(p))}">Cotizar ahora →</a>
-        </div>
-      </article>`
-   ).join("");
+ function renderFiltros(){ const c=$("#filtros"); const chips=[{id:"all",name:"Todos"},...CATEGORIES];
+   c.innerHTML=chips.map(x=>`<button class="chip ${x.id===filtro?'on':''}" data-cat="${x.id}">${x.name}</button>`).join("");
+   $$(".chip",c).forEach(ch=>ch.addEventListener("click",()=>{filtro=ch.dataset.cat;renderFiltros();renderProductos();}));
  }
 
- function renderFiltros(){
-   const cont = $("#filtros");
-   const chips = [{ id:"all", name:"Todos" }, ...CATEGORIES];
-   cont.innerHTML = chips.map(c =>
-     `<button class="chip ${c.id===filtroActivo?'activo':''}" data-cat="${c.id}">${c.name}</button>`
-   ).join("");
-   $$(".chip", cont).forEach(ch => ch.addEventListener("click", () => {
-     filtroActivo = ch.dataset.cat; renderFiltros(); renderProductos();
-   }));
- }
+ const msg=p=>`Hola FRAMA, me interesa cotizar: ${p.name} (SKU: ${p.sku}). Unidad: ${p.unit}.`;
 
- function mensajeProducto(p){
-   return `Hola FRAMA, me interesa cotizar: ${p.name} (SKU: ${p.sku}). Unidad: ${p.unit}.`;
- }
+ function card(p){ return `<article class="prod"><div class="foto"><div class="ph">${imgTag(catImg(p.category),p.name)}</div></div>
+   <div class="body"><span class="et">${catName(p.category)}</span><h3>${p.name}</h3><div class="sku">SKU: ${p.sku} · ${p.unit}</div><p>${p.description}</p>
+   <div class="pie"><a class="btn btn-wa" target="_blank" rel="noopener" href="${wa(msg(p))}">Cotizar</a><a class="btn btn-borde" href="tel:${TEL}">Llamar</a></div></div></article>`; }
 
- function tarjetaProducto(p){
-   return `<article class="card-prod">
-     <div class="foto"><div class="ph">${imgTag(categoryImg(p.category), p.name)}</div></div>
-     <div class="body">
-       <span class="et">${categoryName(p.category)}</span>
-       <h3>${p.name}</h3>
-       <div class="sku">SKU: ${p.sku} · ${p.unit}</div>
-       <p>${p.description}</p>
-       <div class="pie">
-         <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink(mensajeProducto(p))}">Cotizar</a>
-         <a class="btn btn-borde" href="tel:${TEL}">Llamar</a>
-       </div>
-     </div>
-   </article>`;
- }
-
- function renderProductos(){
-   const grid = $("#gridProd");
-   const lista = productosFiltrados();
-   grid.innerHTML = lista.length === 0
-     ? `<div class="vacio">No se encontraron productos. Prueba con otra búsqueda o categoría.</div>`
-     : lista.map(tarjetaProducto).join("");
- }
+ function renderProductos(){ const g=$("#gridProd"); const l=filtrados();
+   g.innerHTML=l.length?l.map(card).join(""):`<div class="vacio">No se encontraron productos. Prueba con otra búsqueda o categoría.</div>`; }
 
  // ----- CSV -----
- function escapeCSV(v){ const s=String(v??""); return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s; }
- function generarCSV(lista = PRODUCTS){
-   const h = ["id","name","category","sku","unit","description"];
-   const filas = lista.map(p => h.map(k => escapeCSV(k==="category"?categoryName(p.category):p[k])).join(","));
-   return [h.join(","), ...filas].join("\n");
- }
- function descargarCSV(){
-   const blob = new Blob([generarCSV(productosFiltrados())], { type:"text/csv;charset=utf-8;" });
-   const url = URL.createObjectURL(blob);
-   const a = document.createElement("a");
-   a.href = url; a.download = "catalogo-frama.csv";
-   document.body.appendChild(a); a.click(); document.body.removeChild(a);
-   URL.revokeObjectURL(url);
- }
+ const esc=v=>{const s=String(v??"");return /[",\n]/.test(s)?`"${s.replace(/"/g,'""')}"`:s;};
+ function genCSV(l=PRODUCTS){const h=["id","name","category","sku","unit","description"];
+   return [h.join(","),...l.map(p=>h.map(k=>esc(k==="category"?catName(p.category):p[k])).join(","))].join("\n");}
+ function dlCSV(){const b=new Blob([genCSV(filtrados())],{type:"text/csv;charset=utf-8;"});const u=URL.createObjectURL(b);
+   const a=document.createElement("a");a.href=u;a.download="catalogo-frama.csv";document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(u);}
 
- // ----- Formulario (WhatsApp) -----
- function mensajeFormulario(form){
-   const d = new FormData(form);
-   return `Solicitud de cotización - FRAMA\nNombre/Empresa: ${d.get("nombre")||""}\nTeléfono: ${d.get("telefono")||""}\n\n${d.get("mensaje")||""}`;
- }
+ // ----- Form -----
+ const msgForm=f=>{const d=new FormData(f);return `Solicitud de cotización - FRAMA\nNombre/Empresa: ${d.get("nombre")||""}\nTeléfono: ${d.get("telefono")||""}\n\n${d.get("mensaje")||""}`;};
 
- // ----- Imágenes de marco (hero/stats/sobre) -----
- function cargarImagenes(){
-   $$("[data-img]").forEach(el => { el.src = IMG[el.dataset.img] || ""; });
+ // ----- Contadores -----
+ function animarContador(el){ const tgt=+el.dataset.count, pre=el.dataset.pre||"", suf=el.dataset.suf||"", dur=1500, t0=performance.now();
+   (function step(t){ const p=Math.min((t-t0)/dur,1), val=Math.floor(p*tgt);
+     el.textContent=pre+val.toLocaleString("es-MX")+suf; if(p<1)requestAnimationFrame(step); else el.textContent=pre+tgt.toLocaleString("es-MX")+suf; })(t0);
  }
 
  // ----- UI -----
  function initUI(){
-   $("#busqueda").addEventListener("input", e => { textoBusqueda = e.target.value; renderProductos(); });
-   $("#btnCSV").addEventListener("click", descargarCSV);
-   $("#formCotiza").addEventListener("submit", e => {
-     e.preventDefault();
-     window.open(waLink(mensajeFormulario(e.target)), "_blank", "noopener");
-   });
-   const menu = $("#menu");
-   $("#hamb").addEventListener("click", () => menu.classList.toggle("open"));
-   $$("#menu a").forEach(a => a.addEventListener("click", () => menu.classList.remove("open")));
-   $("#topBtn").addEventListener("click", () => window.scrollTo({ top:0, behavior:"smooth" }));
-   $("#anio").textContent = new Date().getFullYear();
+   $("#busqueda").addEventListener("input",e=>{busq=e.target.value;renderProductos();});
+   $("#btnCSV").addEventListener("click",dlCSV);
+   $("#formCotiza").addEventListener("submit",e=>{e.preventDefault();window.open(wa(msgForm(e.target)),"_blank","noopener");});
+   const menu=$("#menu"); $("#hamb").addEventListener("click",()=>menu.classList.toggle("open"));
+   $$("#menu a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("open")));
+   $("#topBtn").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+   $("#anio").textContent=new Date().getFullYear();
+   const onScroll=()=>{$("#nav").classList.toggle("sc",scrollY>8);$("#topBtn").classList.toggle("show",scrollY>500);};
+   addEventListener("scroll",onScroll); onScroll();
 
-   const onScroll = () => {
-     $("#nav").classList.toggle("scrolled", window.scrollY > 8);
-     $("#topBtn").classList.toggle("show", window.scrollY > 400);
-   };
-   window.addEventListener("scroll", onScroll); onScroll();
-
-   // reveal on scroll (con respaldo: nunca deja contenido oculto)
-   const reveals = $$(".reveal");
-   const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-   if(!("IntersectionObserver" in window) || reduce){
-     reveals.forEach(el => el.classList.add("in"));
-   } else {
-     const io = new IntersectionObserver((entries) => {
-       entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
-     }, { threshold:.05, rootMargin:"0px 0px -40px 0px" });
-     reveals.forEach(el => io.observe(el));
-     // respaldo: si algo no se reveló, mostrarlo de todas formas
-     setTimeout(() => reveals.forEach(el => el.classList.add("in")), 2500);
-   }
+   // reveal + contadores (a prueba de fallos)
+   const rv=$$(".rv"), reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+   const fire=el=>{el.classList.add("in"); if(el.id==="statbar") $$("[data-count]",el).forEach(animarContador);};
+   if(!("IntersectionObserver"in window)||reduce){ rv.forEach(fire); }
+   else{ const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){fire(e.target);io.unobserve(e.target);}});},{threshold:.05,rootMargin:"0px 0px -40px 0px"});
+     rv.forEach(el=>io.observe(el)); setTimeout(()=>rv.forEach(fire),2600); }
  }
 
- function init(){
-   cargarImagenes();
-   renderCategorias();
-   renderDestacados();
-   renderFiltros();
-   renderProductos();
-   initUI();
- }
+ function init(){ $$("[data-img]").forEach(el=>el.src=IMG[el.dataset.img]||"");
+   renderMarcas(); renderPrecios(); renderCategorias(); renderDestacados(); renderFiltros(); renderProductos(); initUI(); }
 
- // =================== TESTS ===================
- function runTests(){
-   const r = []; const a = (n,c)=>r.push({n,ok:!!c});
-   a("Hay categorías", CATEGORIES.length>0);
-   a("Hay productos", PRODUCTS.length>0);
-   a("Cada categoría tiene ícono e imagen", CATEGORIES.every(c=>c.icon && c.img));
-   a("IDs de producto únicos", new Set(PRODUCTS.map(p=>p.id)).size===PRODUCTS.length);
-   a("SKUs únicos", new Set(PRODUCTS.map(p=>p.sku)).size===PRODUCTS.length);
-   a("Categoría válida en cada producto", PRODUCTS.every(p=>CATEGORIES.some(c=>c.id===p.category)));
-   a("Campos completos", PRODUCTS.every(p=>p.name&&p.sku&&p.unit&&p.description));
-   a("Hay productos destacados", PRODUCTS.some(p=>p.destacado));
-   const g=[filtroActivo,textoBusqueda];
-   filtroActivo="all"; textoBusqueda="";
-   a("Filtro 'all'", productosFiltrados().length===PRODUCTS.length);
-   filtroActivo="herramientas";
-   a("Filtro por categoría", productosFiltrados().every(p=>p.category==="herramientas"));
-   filtroActivo="all"; textoBusqueda=PRODUCTS[0].sku;
-   a("Búsqueda por SKU", productosFiltrados().some(p=>p.id===PRODUCTS[0].id));
-   [filtroActivo,textoBusqueda]=g;
-   a("CSV encabezado+filas", generarCSV().split("\n").length===PRODUCTS.length+1);
-   a("CSV escapa comillas", escapeCSV('a,"b"')==='"a,""b"""');
-   a("WhatsApp formato", /^\d{10,15}$/.test(WHATSAPP));
-   a("Teléfono formato", /^\+\d{10,15}$/.test(TEL));
+ // ============ TESTS ============
+ function runTests(){ const r=[],a=(n,c)=>r.push({n,ok:!!c});
+   a("Hay categorías",CATEGORIES.length>0); a("Hay productos",PRODUCTS.length>0);
+   a("Categorías con ícono e imagen",CATEGORIES.every(c=>c.icon&&c.img));
+   a("IDs únicos",new Set(PRODUCTS.map(p=>p.id)).size===PRODUCTS.length);
+   a("SKUs únicos",new Set(PRODUCTS.map(p=>p.sku)).size===PRODUCTS.length);
+   a("Categoría válida",PRODUCTS.every(p=>CATEGORIES.some(c=>c.id===p.category)));
+   a("Campos completos",PRODUCTS.every(p=>p.name&&p.sku&&p.unit&&p.description));
+   a("Hay destacados",PRODUCTS.some(p=>p.destacado)); a("Hay marcas",MARCAS.length>=6);
+   const g=[filtro,busq]; filtro="all";busq=""; a("Filtro 'all'",filtrados().length===PRODUCTS.length);
+   filtro="electrico"; a("Filtro categoría",filtrados().every(p=>p.category==="electrico"));
+   filtro="all";busq=PRODUCTS[0].sku; a("Búsqueda SKU",filtrados().some(p=>p.id===PRODUCTS[0].id)); [filtro,busq]=g;
+   a("CSV filas",genCSV().split("\n").length===PRODUCTS.length+1); a("CSV escapa",esc('a,"b"')==='"a,""b"""');
+   a("WhatsApp",/^\d{10,15}$/.test(WHATSAPP)); a("Teléfono",/^\+\d{10,15}$/.test(TEL));
    const f=r.filter(x=>!x.ok);
-   if(f.length) console.error(`❌ ${f.length} prueba(s) fallida(s):`, f.map(x=>x.n));
-   else console.log(`✅ ${r.length} pruebas pasaron correctamente.`);
+   if(f.length)console.error(`❌ ${f.length} prueba(s) fallida(s):`,f.map(x=>x.n)); else console.log(`✅ ${r.length} pruebas pasaron correctamente.`);
    return f.length===0;
  }
 
- // =================== ARRANQUE ===================
- document.addEventListener("DOMContentLoaded", () => { init(); runTests(); });
+ document.addEventListener("DOMContentLoaded",()=>{init();runTests();});
 </script>
 </body>
 </html>
